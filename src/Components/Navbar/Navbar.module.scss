@@ -1,0 +1,30 @@
+.Navbar_main {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  padding-top: 0.2em;
+  height: 3em;
+  background-color: #543300;
+  background: linear-gradient(to left, #965b02, #ac6803 -40%, #543300 50%, #965b02 95%);
+
+  li {
+    list-style: none;
+    font-size: 1.5em;
+    color: #fff;
+  }
+  a:link {
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Navbar_main {
+    padding-top: 0.5em;
+    height: 2.5em;
+    li {
+      list-style: none;
+      font-size: 1em;
+      color: #fff;
+    }
+  }
+}
