@@ -1,0 +1,101 @@
+.landing {
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: url("./Images/Background.png");
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-size: 100vw 100vh;
+}
+
+.Eye {
+  position: absolute;
+  top: 200px;
+  left: 650px;
+  opacity: 0;
+  animation-name: Eye;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+
+.boatL {
+  left: -80px;
+  position: absolute;
+  top: 440px;
+  left: 0px;
+  animation-name: boatL;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+
+.boatR {
+  position: absolute;
+  top: 400px;
+  right: -275px;
+  animation-name: boatR;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+
+.birdL {
+  position: absolute;
+  left: -300px;
+  opacity: 0;
+  animation-name: birdL;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+
+.birdR {
+  position: absolute;
+  right: -300px;
+  opacity: 0;
+  animation-name: birdR;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Eye {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes boatL {
+  0% {
+    left: -80px;
+  }
+  100% {
+    left: 400px;
+  }
+}
+@keyframes boatR {
+  0% {
+    right: -275px;
+  }
+  100% {
+    right: 150px;
+  }
+}
+@keyframes birdL {
+  from {
+    left: -300px;
+    opcacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+@keyframes birdR {
+  from {
+    right: -300px;
+    opcacity: 0;
+  }
+  to {
+    right: 0px;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=landing.css.map */
