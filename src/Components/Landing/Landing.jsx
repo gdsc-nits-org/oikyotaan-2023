@@ -5,15 +5,15 @@ import boatright from "./Images/boatright.svg";
 import birdLeft from "./Images/birdLeft.svg";
 import birdRight from "./Images/birdRight.svg";
 
-import "./landing.css";
+import style from "./landing.module.css";
 export default function Landing() {
   return (
-    <div className="landing">
-      <img className="Eye" src={eye} alt="" />
-      <img className="boatL" src={boatleft} alt="" />
-      <img className="boatR" src={boatright} alt="" />
-      <img className="birdL" src={birdLeft} alt="" />
-      <img className="birdR" src={birdRight} alt="" />
+    <div className={style.landing}>
+      <img className={style.Eye} src={eye} alt="" />
+      <img className={style.boatL} src={boatleft} alt="" />
+      <img className={style.boatR} src={boatright} alt="" />
+      <img className={style.birdL} src={birdLeft} alt="" />
+      <img className={style.birdR} src={birdRight} alt="" />
     </div>
   );
 }
