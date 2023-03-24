@@ -3,21 +3,28 @@
   overflow: hidden;
   background-image: url("/assets/Background.png");
   position: relative;
-  min-height: 100vh;
-  // width: 100vw;
-  background-size: 100vw 100vh;
-  // background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .Eye {
   position: relative;
-  top: 14em;
-  left: 2em;
+  width: 100%;
+  height: 26%;
+  top: 20%;
+  padding-left: 4%;
   display: flex;
   justify-content: center;
   opacity: 0;
   animation-name: Eye;
   animation-duration: 7s;
   animation-fill-mode: forwards;
+  img {
+    max-height: 100%;
+    max-width: 30%;
+  }
 }
 .boatL {
   display: flex;
@@ -27,7 +34,7 @@
   position: absolute;
   animation-duration: 8s;
   animation-fill-mode: forwards;
-  height: 55vh;
+  height: 55%;
 
   img {
     width: 7em;
@@ -42,12 +49,10 @@
   animation-name: boatR;
   animation-duration: 8s;
   animation-fill-mode: forwards;
-  height: 65vh;
+  height: 65%;
 }
 .birdL {
   position: absolute;
-  left: -300px;
-  top: 10em;
   opacity: 0;
   animation-name: birdL;
   animation-duration: 7s;
@@ -55,7 +60,6 @@
 }
 .birdR {
   position: absolute;
-  right: -300px;
   opacity: 0;
   animation-name: birdR;
   animation-duration: 7s;
@@ -109,18 +113,21 @@
 
 @media screen and (max-width: 768px) {
   .landing {
-    background-size: 100vw 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .Eye {
-    top: 16em;
-    left: 0.5em;
+    height: 15%;
+    top: 30%;
+    padding-left: 5%;
     img {
-      width: 8em;
-      height: 8em;
+      max-height: 100%;
+      max-width: 40%;
     }
   }
   .boatL {
-    height: 53vh;
+    bottom: 30%;
     img {
       width: 4em;
       height: 4em;
@@ -128,21 +135,21 @@
   }
 
   .boatR {
-    height: 84vh;
+    bottom: 5%;
     img {
       width: 15em;
       height: 25em;
     }
   }
   .birdL {
-    top: 5em;
+    top: 0em;
     img {
       width: 15em;
       height: 15em;
     }
   }
   .birdR {
-    top: -5em;
+    top: -10em;
     img {
       width: 40em;
       height: 40em;
@@ -151,37 +158,37 @@
 
   @keyframes boatL {
     0% {
-      left: -80px;
+      left: -10em;
     }
     100% {
-      left: 50px;
+      left: 5em;
     }
   }
   @keyframes boatR {
     0% {
-      right: -275px;
+      right: -10em;
     }
     100% {
-      right: 50px;
+      right: 0em;
     }
   }
   @keyframes birdL {
     from {
-      left: -300px;
+      left: -10em;
       opcacity: 0;
     }
     to {
-      left: -50px;
+      left: 0em;
       opacity: 1;
     }
   }
   @keyframes birdR {
     from {
-      right: -300px;
+      right: -10em;
       opcacity: 0;
     }
     to {
-      right: -20px;
+      right: 0em;
       opacity: 1;
     }
   }
