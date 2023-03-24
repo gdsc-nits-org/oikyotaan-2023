@@ -1,17 +1,14 @@
-import { Routes, Route } from "react-router-dom";
-
-import { Navbar } from "./Components";
-
-import { Error, Home } from "./Pages";
+import { About } from "./Pages";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Error />} />
-      </Routes>
+      </Routes> */}
+      <About />
     </>
   );
 };
