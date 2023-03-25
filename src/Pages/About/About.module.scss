@@ -1,10 +1,7 @@
-* {
-  background-color: #ffcb81;
-}
-
 .aboutUs {
+  background-color: #ffcb81;
   position: relative;
-  width: 100vw;
+  // width: 100vw;
 }
 .about {
   /* height: 60vh; */
@@ -18,7 +15,6 @@
   margin-left: 20vw;
   justify-content: center;
   .about_imag {
-    // display: ;
     margin-left: 30vw;
     position: relative;
     // transition: 2s delay;
@@ -30,7 +26,7 @@
   margin: 0 30px;
   font-size: 1.25rem;
   margin-left: 150px;
-  animation: name1 5s;
+  animation: name1 3s;
 }
 @keyframes name1 {
   0% {
@@ -42,9 +38,10 @@
 }
 
 .about_image {
-  width: 35vw;
+  width: 28vw;
   height: 80vh;
   animation: name 10s;
+  // margin-bottom: 15vh;
 }
 @keyframes name {
   from {
@@ -159,9 +156,9 @@
   }
 
   .about_image {
-    margin-left: 25px;
-    margin-bottom: 0px;
-    width: 75vw;
+    margin-left: 4vw;
+    margin-bottom: 0;
+    width: 65vw;
     height: 80vw;
   }
   .about_heading {

@@ -1,14 +1,18 @@
-import { About } from "./Pages";
+import { Routes, Route } from "react-router-dom";
+
+import { Navbar } from "./Components";
+import { Error, Home, About } from "./Pages";
 
 const App = () => {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Error />} />
-      </Routes> */}
-      <About />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      {/* <About /> */}
     </>
   );
 };

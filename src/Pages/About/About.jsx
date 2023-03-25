@@ -1,20 +1,15 @@
 import style from "./About.module.scss";
-import durgamaa from "../../../public/assets/durgamaa.png";
-import alpona from "../../../public/assets/alpona.png";
-import line1 from "../../../public/assets/line1.png";
-import Line2 from "../../../public/assets/Line2.png";
-import Polygon1 from "../../../public/assets/Polygon1.png";
 const About = () => {
   return (
-    <div className="aboutUs">
-      <img src={alpona} alt="" className={style.alpona} />
+    <div className={style.aboutUs}>
+      <img src="/assets/alpona.png" alt="alpona" className={style.alpona} />
       <div className={style.head}>
         <h3 className={style.about_heading}>ABOUT US</h3>
-        <img src={line1} alt="image1" className={style.about_imag} />
+        <img src="/assets/line1.png" alt="image1" className={style.about_imag} />
       </div>
       <div className={style.about}>
         <div className={style.fade}>
-          <img src={durgamaa} alt="image1" className={style.about_image} id={style.p3} />
+          <img src="/assets/durgamaa.png" alt="image1" className={style.about_image} />
         </div>
         <div className={style.about_text_div}>
           <div className={style.about_text}>
@@ -28,15 +23,21 @@ const About = () => {
             libero. Dolore, sed suscipit. Ullam placeat, corrupti explicabo velit nam ut
             tenetur fugit, ducimus libero vero enim voluptatum! Hic culpa animi voluptatum
             consequatur facilis ad reprehenderit placeat consectetur velit nostrum,
-            provident rem vel? In voluptas, ipsum voluptate, neque nihil quo fugiat sunt
-            explicabo similique unde dicta autem deserunt consectetur. Quidem ducimus enim
-            id dolorem? Architecto eum autem porro, eaque, cumque, quam officiis sit ipsum
-            aspernatur voluptatum est debitis quos.
+            provident rem vellibero.
+            <br></br>
+            <br></br>
+            Dolore, sed suscipit. Ullam placeat, corrupti explicabo velit nam ut tenetur
+            fugit, ducimus libero vero enim voluptatum! Hic culpa animi voluptatum
+            consequatur facilis ad reprehenderit placeat consectetur velit nostrum,
+            provident rem velprovident rem vellibero. Dolore, sed suscipit. Ullam placeat,
+            corrupti explicabo velit nam ut tenetur fugit, ducimus libero vero enim
+            voluptatum! Hic culpa animi voluptatum consequatur facilis ad reprehenderit
+            placeat consectetur velit nostrum, provident rem vel.
           </div>
           <div className={style.footer}>
-            <img src={Line2} alt="image1" className={style.line1} />
-            <img src={Polygon1} alt="image1" className={style.line2} />
-            <img src={Line2} alt="image1" className={style.line1} />
+            <img src="/assets/Line2.png" alt="image1" className={style.line1} />
+            <img src="/assets/Polygon1.png" alt="image1" className={style.line2} />
+            <img src="/assets/Line2.png" alt="image1" className={style.line1} />
           </div>
         </div>
       </div>
