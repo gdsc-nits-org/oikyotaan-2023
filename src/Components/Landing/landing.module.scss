@@ -1,5 +1,4 @@
 .landing {
-  box-sizing: border-box;
   overflow: hidden;
   background-image: url("/assets/Background.png");
   position: relative;
@@ -22,23 +21,23 @@
   animation-duration: 7s;
   animation-fill-mode: forwards;
   img {
-    max-height: 100%;
-    max-width: 30%;
+    object-fit: cover;
   }
 }
 .boatL {
+  width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  object-fit: contain;
   animation-name: boatL;
-  position: absolute;
   animation-duration: 8s;
   animation-fill-mode: forwards;
-  height: 55%;
-
+  position: absolute;
+  height: 20%;
+  top: 62%;
+  left: 0%;
   img {
-    width: 7em;
-    height: 7em;
+    height: 100%;
   }
 }
 .boatR {
@@ -49,18 +48,26 @@
   animation-name: boatR;
   animation-duration: 8s;
   animation-fill-mode: forwards;
-  height: 65%;
+  height: 40%;
+  top: 53%;
+  right: 0%;
+  img {
+    height: 100%;
+  }
 }
 .birdL {
+  width: 40%;
   position: absolute;
   opacity: 0;
   animation-name: birdL;
+  left: -27%;
   animation-duration: 7s;
   animation-fill-mode: forwards;
 }
 .birdR {
   position: absolute;
   opacity: 0;
+  right: -27%;
   animation-name: birdR;
   animation-duration: 7s;
   animation-fill-mode: forwards;
@@ -75,38 +82,38 @@
 }
 @keyframes boatL {
   0% {
-    left: -80px;
+    left: -18%;
   }
   100% {
-    left: 400px;
+    left: 15%;
   }
 }
 @keyframes boatR {
   0% {
-    right: -275px;
+    right: -9%;
   }
   100% {
-    right: 150px;
+    right: 19%;
   }
 }
 
 @keyframes birdL {
   from {
-    left: -300px;
+    left: -27%;
     opcacity: 0;
   }
   to {
-    left: 0px;
+    left: 0%;
     opacity: 1;
   }
 }
 @keyframes birdR {
   from {
-    right: -300px;
+    right: -27%;
     opcacity: 0;
   }
   to {
-    right: 0px;
+    right: 0%;
     opacity: 1;
   }
 }
@@ -120,42 +127,56 @@
   .Eye {
     height: 15%;
     top: 30%;
-    padding-left: 5%;
+    padding-left: 7%;
     img {
-      max-height: 100%;
-      max-width: 40%;
-    }
-  }
-  .boatL {
-    bottom: 30%;
-    img {
-      width: 4em;
-      height: 4em;
-    }
-  }
-
-  .boatR {
-    bottom: 5%;
-    img {
-      width: 15em;
-      height: 25em;
+      object-fit: cover;
     }
   }
   .birdL {
-    top: 0em;
+    top: -8em;
+    opacity: 0;
     img {
-      width: 15em;
-      height: 15em;
+      width: 16em;
+      height: 27em;
     }
   }
   .birdR {
-    top: -10em;
+    top: -15em;
     img {
-      width: 40em;
-      height: 40em;
+      width: 50em;
+      height: 50em;
     }
   }
-
+  .boatL {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    animation-name: boatL;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    height: 12%;
+    top: 60%;
+    left: 0%;
+    img {
+      height: 100%;
+    }
+  }
+  .boatR {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    animation-name: boatR;
+    animation-duration: 8s;
+    height: 26%;
+    top: 53%;
+    right: 0%;
+    img {
+      height: 100%;
+    }
+  }
   @keyframes boatL {
     0% {
       left: -10em;
