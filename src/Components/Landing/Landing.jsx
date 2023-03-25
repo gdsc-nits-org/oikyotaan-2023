@@ -1,19 +1,28 @@
-import React from "react";
-import eye from "./Images/eye.svg";
-import boatleft from "./Images/boatleft.svg";
-import boatright from "./Images/boatright.svg";
-import birdLeft from "./Images/birdLeft.svg";
-import birdRight from "./Images/birdRight.svg";
+import style from "./landing.module.scss";
 
-import style from "./landing.module.css";
-export default function Landing() {
+const Landing = () => {
   return (
     <div className={style.landing}>
-      <img className={style.Eye} src={eye} alt="" />
-      <img className={style.boatL} src={boatleft} alt="" />
-      <img className={style.boatR} src={boatright} alt="" />
-      <img className={style.birdL} src={birdLeft} alt="" />
-      <img className={style.birdR} src={birdRight} alt="" />
+      <div className={style.birdL}>
+        <img src="/assets/birdleft.svg" alt="left_bird" />
+      </div>
+
+      <div className={style.birdR}>
+        <img src="/assets/birdright.svg" alt="right_bird" />
+      </div>
+      <div className={style.Eye}>
+        <img src="/assets/eye.svg" alt="eye" />
+      </div>
+
+      <div className={style.boatL}>
+        <img src="/assets/boatleft.svg" alt="left_boat" />
+      </div>
+
+      <div className={style.boatR}>
+        <img src="/assets/boatright.svg" alt="right_boat" />
+      </div>
     </div>
   );
-}
+};
+
+export default Landing;
