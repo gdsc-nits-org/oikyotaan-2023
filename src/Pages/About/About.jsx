@@ -2,6 +2,9 @@ import style from "./About.module.scss";
 const About = () => {
   return (
     <div className={style.aboutUs}>
+      {/* <div className={style.background}>
+       <img src="/assets/Orange.png" alt="orange" className={style.orange}/>
+      </div> */}
       <img src="/assets/alpona.png" alt="alpona" className={style.alpona} />
       <div className={style.head}>
         <h3 className={style.about_heading}>ABOUT US</h3>
@@ -41,6 +44,9 @@ const About = () => {
           </div>
         </div>
       </div>
+      {/* <div className="background">
+       <img src="/assets/Orange.png" alt="orange" className={style.orange}/>
+      </div> */}
     </div>
   );
 };
