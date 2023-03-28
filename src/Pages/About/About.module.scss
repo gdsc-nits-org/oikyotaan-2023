@@ -4,26 +4,8 @@
   overflow: hidden;
   background-image: url("/assets/Orange.png");
   background-repeat: no-repeat;
-  //  background-position: ;
   background-size: cover;
 }
-
-//   .orange{
-//     position:absolute;
-//     width: 100%;
-//     height:100%;
-//     animation: name2 5s;
-//     // z-index:-1;
-//   }
-// @keyframes name2 {
-//   from {
-//     opacity: 0;
-//   }
-//   to {
-//     opacity: 1;
-//     // z-index:1;
-//   }
-// }
 
 .about {
   /* height: 60vh; */
@@ -133,14 +115,6 @@
     flex-direction: column;
   }
 
-  // .about_heading {
-  //   /* width: 240px; */
-  //   margin-right: 10vw;
-  //   padding-right: 23vw;
-  //   font-size: 2.5rem;
-  //   margin-bottom: 3px;
-  //   text-align: center;
-  // }
   .about_text_div {
     display: flex;
     flex-wrap: wrap;
