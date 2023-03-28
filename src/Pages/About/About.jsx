@@ -2,12 +2,9 @@ import style from "./About.module.scss";
 const About = () => {
   return (
     <div className={style.aboutUs}>
-      {/* <div className={style.background}>
-       <img src="/assets/Orange.png" alt="orange" className={style.orange}/>
-      </div> */}
       <img src="/assets/alpona.png" alt="alpona" className={style.alpona} />
       <div className={style.head}>
-        <h3 className={style.about_heading}>ABOUT US</h3>
+        <h3 className={style.about_heading}>About Us</h3>
         <img src="/assets/line1.png" alt="image1" className={style.about_imag} />
       </div>
       <div className={style.about}>
@@ -35,7 +32,11 @@ const About = () => {
             provident rem velprovident rem vellibero. Dolore, sed suscipit. Ullam placeat,
             corrupti explicabo velit nam ut tenetur fugit, ducimus libero vero enim
             voluptatum! Hic culpa animi voluptatum consequatur facilis ad reprehenderit
-            placeat consectetur velit nostrum, provident rem vel.
+            placeat consectetur velit nostrum, provident rem vel. provident rem
+            velprovident rem vellibero. Dolore, sed suscipit. Ullam placeat, corrupti
+            explicabo velit nam ut tenetur fugit, ducimus libero vero enim voluptatum! Hic
+            culpa animi voluptatum consequatur facilis ad reprehenderit placeat
+            consectetur velit nostrum, provident rem vel.
           </div>
           <div className={style.footer}>
             <img src="/assets/Line2.png" alt="image1" className={style.line1} />
