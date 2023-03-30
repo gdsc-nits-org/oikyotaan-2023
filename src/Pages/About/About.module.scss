@@ -1,12 +1,3 @@
-.aboutUs {
-  background-color: #ffcb81;
-  position: relative;
-  overflow: hidden;
-  background-image: url("/assets/Orange.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .about {
   /* height: 60vh; */
   width: 80vw;
@@ -31,27 +22,42 @@
   margin: 0 30px;
   font-size: 1.25rem;
   margin-left: 5vw;
-  animation: name1 2s;
+  animation: name1 1s;
   text-align: center;
 }
 @keyframes name1 {
   0% {
-    transform: translateX(500px);
+    transform: translateX(700px);
   }
   100% {
     transform: translateX(0px);
   }
 }
 
+.aboutUs {
+  // background-color: #ffcb81;
+  position: relative;
+  overflow: hidden;
+  animation: name2;
+  animation-duration: 1000s;
+}
+@keyframes name2 {
+  0% {
+    background-color: #ffcb81;
+  }
+  2% {
+    background-image: url("/assets/Orange.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .about_image {
   // position: relative;
   width: 23vw;
   height: 78vh;
-  animation: name 5s;
-  // max-width: 100%;
-  // margin-bottom: 15vh;
+  animation: name0 16s;
 }
-@keyframes name {
+@keyframes name0 {
   from {
     opacity: 0;
   }
@@ -62,6 +68,7 @@
 
 .about_imag {
   width: 30%;
+  animation: name 10s;
 }
 .about_heading {
   /* width: 240px; */
@@ -107,6 +114,7 @@
   // float: right;
   // display: flex;
   height: 20vw;
+  animation: name 10s;
 }
 
 @media only screen and (max-width: 660px) {
@@ -159,9 +167,10 @@
       /* width: 240px; */
       // margin-right: 10vw;
       padding-right: 25vw;
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 3px;
       text-align: center;
+      float: left;
     }
     .about_imag {
       // margin-right: 65vw;
