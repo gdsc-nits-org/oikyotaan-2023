@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+.our-team {
+  background: url(/assets/bg.png), url(/assets/orangebg.jpg);
+  opacity: 85%;
+  background-position: center;
+  height: 100vh;
+  overflow: scroll;
+  background-size: cover;
+
+  .team-flower1,
+  .team-flower2 {
+    width: 30em;
+    height: 30em;
+    position: absolute;
+    top: 0;
+    z-index: -3;
+    user-select: none;
+  }
+
+  .team-flower1 {
+    left: 0;
+    transform: rotateY(180deg);
+  }
+
+  .team-flower2 {
+    right: 0;
+  }
+
+  .role {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    font-size: 4em;
+    color: #482c00;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    left: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .our-team {
+    .team-flower1,
+    .team-flower2 {
+      width: 20em;
+      height: 20em;
+    }
+
+    .team-flower2 {
+      display: none;
+    }
+
+    .role {
+      position: fixed;
+      z-index: 10;
+      top: 50%;
+      font-size: 1.5em;
+      color: #482c00;
+      font-weight: 400;
+      font-family: sans-serif;
+      left: 65%;
+      letter-spacing: 0;
+    }
+  }
+}
