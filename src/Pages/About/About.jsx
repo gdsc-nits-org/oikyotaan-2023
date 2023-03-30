@@ -45,9 +45,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* <div className="background">
-       <img src="/assets/Orange.png" alt="orange" className={style.orange}/>
-      </div> */}
     </div>
   );
 };
