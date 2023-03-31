@@ -1,0 +1,162 @@
+.Footer {
+  background-image: url("/assets/kolkata_theme_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footerupper {
+  display: flex;
+  justify-content: space-between;
+
+  .footerupperleft {
+    img {
+      width: 5em;
+      height: 5em;
+    }
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+
+  .footeruppermiddle {
+    img {
+      width: 15em;
+      // height: 5em;
+    }
+  }
+
+  .footerupperright {
+    img {
+      width: 8em;
+      padding-top: 1em;
+    }
+  }
+}
+
+.footermiddle {
+  display: flex;
+  // align-items: center;
+  font: var(--gdsc-font-1);
+  justify-content: space-around;
+  font-size: 1.32em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  .footermiddleleft {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    .location {
+      display: flex;
+      align-items: center;
+      .locationlogo {
+        font-size: 2em;
+        margin-right: 0.5em;
+      }
+    }
+    .phoneno {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      margin-left: 0.5em;
+      .phonenologo {
+        font-size: 1.5em;
+      }
+    }
+  }
+  .footermiddleright {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    .facebook {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      margin-left: 0.5em;
+      .facebooklogo {
+        font-size: 1.5em;
+      }
+    }
+    .instagram {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      margin-left: 0.5em;
+      .instagramlogo {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+.footerlower {
+  display: flex;
+  background-color: #4c2500;
+  justify-content: center;
+  color: #ffff;
+  padding-bottom: 0.5em;
+  font: var(--gdsc-font-1);
+}
+
+@media screen and (max-width: 768px) {
+  .footerupper {
+    .footerupperleft {
+      img {
+        width: 2em;
+        height: 2em;
+      }
+      margin-left: 1em;
+      margin-top: 0.25em;
+    }
+
+    .footeruppermiddle {
+      img {
+        width: 6em;
+      }
+    }
+
+    .footerupperright {
+      img {
+        width: 3em;
+        padding-top: 0.25em;
+      }
+    }
+  }
+  .footermiddle {
+    font-size: 0.75em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    .footermiddleleft {
+      gap: 0.5em;
+      .location {
+        .locationlogo {
+          font-size: 2em;
+          margin-right: 0.5em;
+        }
+      }
+      .phoneno {
+        margin-left: 0.5em;
+        .phonenologo {
+          font-size: 1.5em;
+        }
+      }
+    }
+    .footermiddleright {
+      .facebook {
+        margin-left: 0.5em;
+        .facebooklogo {
+          font-size: 1.5em;
+        }
+      }
+      .instagram {
+        margin-left: 0.5em;
+        .instagramlogo {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+  .footerlower {
+    font-size: 0.5em;
+  }
+}
