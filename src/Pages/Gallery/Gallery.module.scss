@@ -101,7 +101,7 @@
     opacity: 0.5;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   .swiperLeftArrow,
   .swiperRightArrow {
     display: none;
@@ -117,6 +117,37 @@
   .text {
     top: 5%;
     left: 10%;
+    gap: 0.5rem;
+    .design {
+      width: 5rem;
+    }
+    .tt {
+      font-size: 3rem;
+    }
+  }
+}
+@media only screen and (min-width: 790px) and (max-width: 1000px) {
+  .text {
+    top: 5%;
+    left: 28%;
+  }
+  .bimgLeft,
+  .bimgRight {
+    max-width: 50%;
+    object-fit: fill;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 789px) {
+  .text {
+    top: 5%;
+    left: 25%;
+  }
+  .bimgLeft,
+  .bimgRight {
+    max-width: 50%;
+    object-fit: fill;
+  }
+  .text {
     gap: 0.5rem;
     .design {
       width: 5rem;
