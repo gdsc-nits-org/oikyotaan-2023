@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import { Navbar, Sponsor } from "./Components";
+import { Navbar } from "./Components";
 
 import { Error, Home } from "./Pages";
 
@@ -12,7 +12,6 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Error />} />
       </Routes>
-      <Sponsor />
     </>
   );
 };

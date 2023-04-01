@@ -21,7 +21,7 @@ const Sponsor = () => {
         alt=""
       />
       <div className={style.heading}>
-        <img src="../../../public/assets/Sponsers.svg" alt="" />
+        <img src="../../../public/assets/Sponsors.svg" alt="" />
       </div>
       <div className={style.underline}>
         <img src="../../../public/assets/unerdline.svg" alt="" />
