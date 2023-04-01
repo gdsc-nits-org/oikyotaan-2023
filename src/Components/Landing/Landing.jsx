@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 import { useState, useEffect } from "react";
 import Lottie from "react-lottie";
 import { useMediaQuery } from "../../Hooks";
-import style from "./Landing.module.scss";
+import style from "./a.module.scss";
 
 const Landing = () => {
   const [lottie1, setLottie1] = useState("");
@@ -50,7 +50,7 @@ const Landing = () => {
           />
         </div>
         <div className={style.lottie2}>
-          <Lottie options={defaultOptions2} width={isMobile ? 300 : 400} />
+          <Lottie options={defaultOptions2} width={isMobile ? 360 : 400} />
         </div>
       </div>
       <div className={style.down}>
