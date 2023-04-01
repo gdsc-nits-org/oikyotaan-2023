@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 import { useState, useEffect } from "react";
 import Lottie from "react-lottie";
 import { useMediaQuery } from "../../Hooks";
-import style from "./a.module.scss";
+import style from "./Landing.module.scss";
 
 const Landing = () => {
   const [lottie1, setLottie1] = useState("");
