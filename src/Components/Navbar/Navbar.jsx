@@ -1,32 +1,27 @@
 import { Link } from "react-router-dom";
 import style from "./Navbar.module.scss";
+import { useMediaQuery } from "../../Hooks";
 
 const Navbar = () => {
+  const isMobile = useMediaQuery("(max-width: 700px)");
   return (
-    <div>
-      <ul className={style.Navbar_main}>
-        <Link to="/">
-          {" "}
-          <li>Home</li>
-        </Link>
-
-        <Link to="/events">
-          {" "}
-          <li>Events</li>
-        </Link>
-
-        <Link to="/gallery">
-          <li>Gallery</li>
-        </Link>
-        <Link to="/team">
-          <li>Team</li>
-        </Link>
-        <Link to="sponser">
-          <li>Sponser</li>
-        </Link>
-        <Link to="/artists">
-          <li>Artists</li>
-        </Link>
+    <div className={style.container}>
+      <ul className={style.nav}>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/events">Events</Link>
+        </li>
+        <li>
+          <img src="/images/oikyotan.png" alt="img" width={isMobile ? 100 : 160} />
+        </li>
+        <li>
+          <Link to="/gallery">Gallery</Link>
+        </li>
+        <li>
+          <Link to="/team">Team</Link>
+        </li>
       </ul>
     </div>
   );
