@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link to="/team">
           <li>Team</li>
         </Link>
-        <Link to="sponser">
+        <Link to="/sponser">
           <li>Sponser</li>
         </Link>
         <Link to="/artists">
