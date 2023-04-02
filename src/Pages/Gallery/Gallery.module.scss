@@ -35,8 +35,11 @@
   justify-content: center;
   margin-top: 5rem;
   align-items: center;
-  top: 0;
-  left: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 5%;
   .design {
     img {
       max-width: 80%;
@@ -64,8 +67,9 @@
   transition: all 1s ease-in-out;
   // margin-inline: 3rem;
 }
-.swiper-slide-shadow {
-  display: none !important;
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  background-image: none !important;
 }
 .swiperLeftArrow {
   position: absolute;
@@ -112,17 +116,16 @@
   .bimgLeft,
   .bimgRight {
     max-width: 50%;
-    object-fit: fill;
+    object-fit: cover;
+    object-position: bottom;
   }
   .bimgLeft {
     transform: scaleY(-1);
   }
   .text {
-    top: 5%;
-    left: 10%;
     gap: 0.5rem;
     .design {
-      width: 5rem;
+      width: 4rem;
     }
     .tt {
       font-size: 3rem;
@@ -130,21 +133,13 @@
   }
 }
 @media only screen and (min-width: 790px) and (max-width: 1000px) {
-  .text {
-    top: 5%;
-    left: 28%;
-  }
   .bimgLeft,
   .bimgRight {
     max-width: 50%;
     object-fit: fill;
   }
 }
-@media only screen and (min-width: 451px) and (max-width: 789px) {
-  .text {
-    top: 5%;
-    left: 25%;
-  }
+@media only screen and (min-width: 500px) and (max-width: 789px) {
   .bimgLeft,
   .bimgRight {
     max-width: 50%;

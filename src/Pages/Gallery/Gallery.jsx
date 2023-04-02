@@ -48,7 +48,10 @@ const Gallery = () => {
             0: {
               slidesPerView: 1,
             },
-            450: {
+            380: {
+              slidesPerView: 1,
+            },
+            555: {
               slidesPerView: 2,
             },
             789: {
