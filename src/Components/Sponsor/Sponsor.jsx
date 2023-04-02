@@ -5,6 +5,8 @@ const Sponsor = () => {
 
   return (
     <div className={styles.main}>
+      <img id={styles.fleft} src="assets/Flowerleft.svg" alt="" />
+      <img id={styles.fright} src="assets/Flowerright.svg" alt="" />
       <div className={styles.heading}>
         <h1>Sponsors</h1>
         <img src="assets/underline.svg" alt="underline" />
@@ -39,6 +41,7 @@ const Sponsor = () => {
           })}
         </div>
       </div>
+      <img id={styles.frightD} src="assets/Flowerright_down.svg" alt="" />
     </div>
   );
 };
