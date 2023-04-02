@@ -2,9 +2,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Team.module.scss";
 import { OurTeam } from "../../Components";
-
-// const roles = ["developer", "designer", "other"];
-
 const OurTeamPage = () => {
   const [scroll, setScroll] = useState();
   const [designation, setDesignation] = useState("Developer");

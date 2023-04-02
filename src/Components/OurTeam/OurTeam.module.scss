@@ -39,6 +39,34 @@
     }
   }
 
+  .team-type-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    button {
+      padding: 1rem 3rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: #ffebcc;
+      border: 2px solid black;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      margin-right: 5rem;
+      transition: all 0.2s ease-in-out;
+      margin-top: -3rem;
+      margin-bottom: 3rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      &.active-button {
+        color: #fff;
+        background-color: #543300;
+      }
+    }
+  }
+
   .devCard-container {
     display: flex;
     flex-direction: column;
@@ -89,21 +117,17 @@
   bottom: 8em;
 }
 
-//   .team-title {
-//     font-size: 16px;
-//     color: #999;
-//     margin: 0;
-//     color: black;
-//     position: fixed;
-//     z-index: 10;
-//     top: 50%;
-//     font-size: 2em;
-//     right: 25%;
-//   }
-
 @media screen and (max-width: 600px) {
   .our-team {
     width: 100%;
+
+    .team-type-buttons {
+      button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        margin-top: 0;
+      }
+    }
 
     .team-heading {
       margin-bottom: 3em;
