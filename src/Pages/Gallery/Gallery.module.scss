@@ -114,6 +114,9 @@
     max-width: 50%;
     object-fit: fill;
   }
+  .bimgLeft {
+    transform: scaleY(-1);
+  }
   .text {
     top: 5%;
     left: 10%;
