@@ -35,10 +35,20 @@ const Sponsor = () => {
         <div className={style.item}></div>
         <div className={style.item}></div>
       </div>
+      <div className={style.name} id={style.first_name}>
+        <div className={style.item_name}>Name</div>
+        <div className={style.item_name}>Name</div>
+        <div className={style.item_name}>Name</div>
+      </div>
       <div className={style.sponsor} id={style.second}>
         <div className={style.item}></div>
         <div className={style.item}></div>
         <div className={style.item}></div>
+      </div>
+      <div className={style.name} id={style.second_name}>
+        <div className={style.item_name}>Name</div>
+        <div className={style.item_name}>Name</div>
+        <div className={style.item_name}>Name</div>
       </div>
       <div className={style.media_headline}>
         <img src="../../../public/assets/Media Partners.svg" alt="" />
@@ -47,6 +57,11 @@ const Sponsor = () => {
         <div className={style.item}></div>
         <div className={style.item}></div>
         <div className={style.item}></div>
+      </div>
+      <div className={style.name} id={style.third_name}>
+        <div className={style.item_name}>Name</div>
+        <div className={style.item_name}>Name</div>
+        <div className={style.item_name}>Name</div>
       </div>
       <div className={style.BottomBorder}>
         <img src="../../../public/assets/Top.svg" alt="" />

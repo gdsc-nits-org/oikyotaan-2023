@@ -57,8 +57,7 @@
 .sponsor {
   // border:1px solid black;
   position: absolute;
-
-  height: 15%;
+  height: 13%;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -66,7 +65,7 @@
   .item {
     margin-left: 2%;
     margin-right: 2%;
-    height: 80%;
+    height: 100%;
     width: 30%;
     // border:1px solid black;
     border-radius: 5%;
@@ -75,11 +74,39 @@
     background-size: cover;
   }
 }
+.name {
+  // border:1px solid black;
+  position: absolute;
+  height: 3%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .item_name {
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100%;
+    width: 30%;
+    // border:1px solid black;
+    border-radius: 5%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+  }
+}
 #first {
   top: 20%;
 }
+#first_name {
+  top: 33%;
+}
 #second {
   top: 40%;
+}
+#second_name {
+  top: 53%;
 }
 .media_headline {
   display: flex;
@@ -95,6 +122,9 @@
 }
 #third {
   top: 65%;
+}
+#third_name {
+  top: 78%;
 }
 .TopBorder {
   display: flex;
