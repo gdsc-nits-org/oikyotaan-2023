@@ -1,7 +1,6 @@
 .container {
-  height: 100%;
   .main {
-    height: calc(100% - 3rem);
+    height: calc(100vh - 3rem);
     position: relative;
     overflow: hidden;
     .bgImg {
