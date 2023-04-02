@@ -1,25 +1,39 @@
+// import { useState } from 'react';
+// import { InView } from 'react-intersection-observer';
 import TeamCard from "./TeamCard";
 import styles from "./OurTeam.module.scss";
 
 const teamMembers = [
   {
     name: "Bijay Jiwrajka",
-    title: "Developer",
     photoUrl: "/assets/Group 23.png",
   },
   {
     name: "Bijay Jiwrajka",
-    title: "Designer",
     photoUrl: "/assets/Group 23.png",
   },
   {
     name: "Bijay Jiwrajka",
-    title: "Developer",
     photoUrl: "/assets/Group 23.png",
   },
   {
     name: "Bijay Jiwrajka",
-    title: "Marketing",
+    photoUrl: "/assets/Group 23.png",
+  },
+  {
+    name: "Bijay Jiwrajka",
+    photoUrl: "/assets/Group 23.png",
+  },
+  {
+    name: "Bijay Jiwrajka",
+    photoUrl: "/assets/Group 23.png",
+  },
+  {
+    name: "Bijay Jiwrajka",
+    photoUrl: "/assets/Group 23.png",
+  },
+  {
+    name: "Bijay Jiwrajka",
     photoUrl: "/assets/Group 23.png",
   },
 ];
@@ -37,12 +51,7 @@ const OurTeam = () => {
       </div>
       <div className={styles["devCard-container"]}>
         {teamMembers.map((member) => (
-          <TeamCard
-            key={member.name}
-            name={member.name}
-            // title={member.title}
-            photoUrl={member.photoUrl}
-          />
+          <TeamCard key={member.name} name={member.name} photoUrl={member.photoUrl} />
         ))}
       </div>
     </div>

@@ -12,6 +12,8 @@
     .title-heading {
       display: flex;
       gap: 1em;
+      justify-content: center;
+      align-items: center;
 
       img {
         width: 7em;
@@ -20,17 +22,18 @@
       h2 {
         color: #fff;
         font-size: 4.5em;
-        font-weight: 400;
+        font-weight: 600;
         text-align: center;
         font-family: Italiana;
         font-weight: 400;
-        line-height: 5rem;
+        line-height: 6rem;
         letter-spacing: 0.05em;
         display: flex;
         justify-content: center;
         align-items: center;
       }
     }
+
     img {
       width: 17em;
     }
@@ -58,6 +61,7 @@
   height: 30em;
   flex-direction: column;
   margin-bottom: 50%;
+  z-index: -100;
 }
 
 .team-photo {
@@ -73,7 +77,7 @@
   color: #543300;
   z-index: 10;
   position: relative;
-  top: 1em;
+  top: 1.5em;
   font-family: var(--gdsc-font-1);
 }
 
@@ -104,9 +108,20 @@
     .team-heading {
       margin-bottom: 3em;
 
-      h2 {
-        margin-top: -0.6em;
-        font-size: 2em;
+      .title-heading {
+        h2 {
+          font-size: 1.8em;
+          line-height: 3rem;
+        }
+
+        img {
+          width: 3em;
+          height: 2em;
+        }
+      }
+
+      img {
+        width: 10em;
       }
     }
 
@@ -114,7 +129,6 @@
       .devCard {
         width: 16em;
         height: 20em;
-        margin: 10%;
       }
     }
   }
@@ -141,7 +155,8 @@
 
   .team-bottom {
     height: 5em;
-    width: 9.3em;
-    bottom: 2.9em;
+    left: 0;
+    width: 9.5em;
+    bottom: 3.1em;
   }
 }
