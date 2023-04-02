@@ -1,0 +1,46 @@
+import styles from "./Sponsor.module.scss";
+const Sponsor = () => {
+  const mediaPartners = [1, 2, 3];
+  const sponsors = [1, 2, 3, 4, 5, 6];
+
+  return (
+    <div className={styles.main}>
+      <div className={styles.heading}>
+        <h1>Sponsors</h1>
+        <img src="assets/underline.svg" alt="underline" />
+      </div>
+      <div className={styles.sponsorContainer}>
+        <div className={styles.frame}>
+          <img id={styles.top} src="assets/Top.svg" alt="top frame" />
+          <img id={styles.left} src="assets/Left.svg" alt="left frame" />
+          <img id={styles.bottom} src="assets/Bottom.svg" alt="bottom frame" />
+          <img id={styles.right} src="assets/Right.svg" alt="right frame" />
+        </div>
+
+        <div className={styles.sponsorList}>
+          {sponsors.map((sponsor) => {
+            return (
+              <div className={styles.card} key={sponsor}>
+                <img src="assets/card2.png" alt={sponsor} />
+                <p>name</p>
+              </div>
+            );
+          })}
+        </div>
+        <h1 className={styles.media}>Media Partners</h1>
+        <div className={styles.sponsorList}>
+          {mediaPartners.map((sponsor) => {
+            return (
+              <div className={styles.card} key={sponsor}>
+                <img src="assets/card2.png" alt={sponsor} />
+                <p>name</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Sponsor;
