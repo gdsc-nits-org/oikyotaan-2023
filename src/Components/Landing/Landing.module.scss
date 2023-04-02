@@ -1,0 +1,119 @@
+.container {
+  height: 100%;
+  .main {
+    height: calc(100% - 3rem);
+    position: relative;
+    overflow: hidden;
+    .bgImg {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .lottie1 {
+      position: absolute;
+      top: 0;
+    }
+    .lottie2 {
+      position: absolute;
+      right: -350px;
+      bottom: -50px;
+      animation: animate 15s linear infinite;
+      animation-delay: 2s;
+    }
+    @keyframes animate {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-200vw);
+      }
+    }
+  }
+  .down {
+    display: flex;
+    background-color: #a76729;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    button {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      background: none;
+      border: none;
+      letter-spacing: 1.5px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .container {
+    .main {
+      .bgImg {
+        height: 100%;
+        width: 100%;
+      }
+      .lottie1 {
+        top: 5rem;
+        animation-duration: 14s;
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    .main {
+      .bgImg {
+        width: fit-content;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    .main {
+      .bgImg {
+        width: 100%;
+        height: fit-content;
+      }
+      .lottie1 {
+        top: 3rem;
+      }
+      .lottie2 {
+        right: -350px;
+      }
+    }
+  }
+}
+
+//landscape mode
+@media (max-height: 570px) {
+  .container {
+    height: 130vh;
+    .scrollbtn {
+      bottom: 0;
+    }
+  }
+}
+
+@media (max-height: 500px) {
+  .container {
+    height: 150vh;
+  }
+}
+
+@media (max-height: 430px) {
+  .container {
+    height: 175vh;
+  }
+}
+//iphone SE
+@media (max-height: 390px) {
+  .container {
+    height: 187vh;
+  }
+}
