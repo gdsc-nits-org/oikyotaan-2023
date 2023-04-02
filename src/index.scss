@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Italiana:wght@100;200;300;400;500;600;700;800;900&family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Italiana&display=swap");
 
 :root {
   --gdsc-font-1: "Poppins", sans-serif;
+  --oikyotaan-font-1: "Italiana", serif;
   --gdsc-blue-1-100: #4885ed;
   --gdsc-blue-2-100: #4285f4;
   --gdsc-blue-3-100: #547dbf;
@@ -12,6 +14,8 @@
   --gdsc-red-2-100: #f0766c;
 
   --gdsc-yellow-1-100: #f4c20d;
+
+  --oikyotaan-brown-100: #543300;
 
   --gdsc-dark-1-100: #1d192b;
   --gdsc-content-1-100: #313033;
@@ -34,8 +38,5 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--gdsc-font-1);
-}
-body {
-  background-color: #f6d29e;
+  font-family: var(--oikyotaan-font-1);
 }

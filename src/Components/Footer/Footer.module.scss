@@ -1,8 +1,15 @@
+.footer-container {
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
 .Footer {
   background-image: url("/assets/kolkata_theme_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 2%;
 }
 
 .footerupper {
@@ -11,8 +18,10 @@
 
   .footerupperleft {
     img {
-      width: 5em;
-      height: 5em;
+      height: 7em;
+      border-radius: 2em;
+      background: rgb(255, 255, 255);
+      padding: 1em;
     }
     margin-left: 2em;
     margin-top: 1em;
@@ -28,7 +37,11 @@
   .footerupperright {
     img {
       width: 8em;
-      padding-top: 1em;
+      aspect-ratio: 1;
+      object-fit: cover;
+      padding: 1em;
+      background: white;
+      border-radius: 50%;
     }
   }
 }
@@ -41,6 +54,7 @@
   font-size: 1.32em;
   padding-top: 2em;
   padding-bottom: 0.5em;
+  font-weight: 600;
 
   .footermiddleleft {
     display: flex;
@@ -105,8 +119,8 @@
   .footerupper {
     .footerupperleft {
       img {
-        width: 2em;
-        height: 2em;
+        height: 12vw;
+        padding: 1vw;
       }
       margin-left: 1em;
       margin-top: 0.25em;
@@ -120,8 +134,8 @@
 
     .footerupperright {
       img {
-        width: 3em;
-        padding-top: 0.25em;
+        width: 12vw;
+        padding: 1vw;
       }
     }
   }

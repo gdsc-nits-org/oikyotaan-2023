@@ -26,6 +26,13 @@
         text-decoration: none;
         color: #543300;
         letter-spacing: 2px;
+
+        &.active {
+          text-decoration: underline;
+          text-decoration-color: #da2925;
+          text-decoration-thickness: 0.2rem;
+          text-underline-offset: 0.4rem;
+        }
       }
     }
   }

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import style from "./Navbar.module.scss";
 import { useMediaQuery } from "../../Hooks";
 
@@ -8,19 +8,36 @@ const Navbar = () => {
     <div className={style.container}>
       <ul className={style.nav}>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/" className={({ isActive }) => (isActive ? style.active : "")}>
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/events">Events</Link>
+          <NavLink
+            to="/events"
+            className={({ isActive }) => (isActive ? style.active : "")}
+          >
+            Events
+          </NavLink>
         </li>
         <li className={style.logo}>
           <img src="/images/oikyotan.png" alt="img" width={isMobile ? 100 : 160} />
         </li>
         <li>
-          <Link to="/gallery">Gallery</Link>
+          <NavLink
+            to="/gallery"
+            className={({ isActive }) => (isActive ? style.active : "")}
+          >
+            Gallery
+          </NavLink>
         </li>
         <li>
-          <Link to="/team">Team</Link>
+          <NavLink
+            to="/team"
+            className={({ isActive }) => (isActive ? style.active : "")}
+          >
+            Team
+          </NavLink>
         </li>
       </ul>
     </div>
