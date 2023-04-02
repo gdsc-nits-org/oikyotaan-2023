@@ -1,5 +1,5 @@
 .main {
-  background: url("../../../public/assets/Background_sponsor.png");
+  background: url("/assets/Background_sponsor.png");
   background-size: cover;
   padding-top: 5%;
   color: white;
@@ -20,7 +20,7 @@
 }
 
 .sponsorContainer {
-  background: url("../../../public/assets/monument.svg");
+  background: url("/assets/monument.svg");
   background-size: cover;
   width: 100%;
   position: relative;
@@ -122,8 +122,6 @@
     .sponsorList {
       .card {
         gap: 2%;
-        img {
-        }
         p {
           font-size: 0.9rem;
         }
