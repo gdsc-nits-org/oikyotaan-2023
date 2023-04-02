@@ -1,70 +1,43 @@
-import React from "react";
-import style from "./sponsor.module.scss";
+import styles from "./Sponsor.module.scss";
 const Sponsor = () => {
-  return (
-    <div className={style.main}>
-      <img className={style.monument} src="../../../public/assets/monument.svg" alt="" />
-      <div className={style.LeftBorder}>
-        <img src="../../../public/assets/Left.svg" alt="" />
-      </div>
-      <div className={style.RightBorder}>
-        <img src="../../../public/assets/Right.svg" alt="" />
-      </div>
-      <img
-        className={style.FlowerLeft}
-        src="../../../public/assets/Flowerleft.svg"
-        alt=""
-      />
-      <img
-        className={style.FlowerRight}
-        src="../../../public/assets/Flowerright.svg"
-        alt=""
-      />
-      <div className={style.heading}>
-        <img src="../../../public/assets/Sponsors.svg" alt="" />
-      </div>
-      <div className={style.underline}>
-        <img src="../../../public/assets/unerdline.svg" alt="" />
-      </div>
-      <div className={style.TopBorder}>
-        <img src="../../../public/assets/Top.svg" alt="" />
-      </div>
+  const mediaPartners = [1, 2, 3];
+  const sponsors = [1, 2, 3, 4, 5, 6];
 
-      <div className={style.sponsor} id={style.first}>
-        <div className={style.item}></div>
-        <div className={style.item}></div>
-        <div className={style.item}></div>
+  return (
+    <div className={styles.main}>
+      <div className={styles.heading}>
+        <h1>Sponsors</h1>
+        <img src="assets/underline.svg" alt="underline" />
       </div>
-      <div className={style.name} id={style.first_name}>
-        <div className={style.item_name}>Name</div>
-        <div className={style.item_name}>Name</div>
-        <div className={style.item_name}>Name</div>
-      </div>
-      <div className={style.sponsor} id={style.second}>
-        <div className={style.item}></div>
-        <div className={style.item}></div>
-        <div className={style.item}></div>
-      </div>
-      <div className={style.name} id={style.second_name}>
-        <div className={style.item_name}>Name</div>
-        <div className={style.item_name}>Name</div>
-        <div className={style.item_name}>Name</div>
-      </div>
-      <div className={style.media_headline}>
-        <img src="../../../public/assets/Media Partners.svg" alt="" />
-      </div>
-      <div className={style.sponsor} id={style.third}>
-        <div className={style.item}></div>
-        <div className={style.item}></div>
-        <div className={style.item}></div>
-      </div>
-      <div className={style.name} id={style.third_name}>
-        <div className={style.item_name}>Name</div>
-        <div className={style.item_name}>Name</div>
-        <div className={style.item_name}>Name</div>
-      </div>
-      <div className={style.BottomBorder}>
-        <img src="../../../public/assets/Top.svg" alt="" />
+      <div className={styles.sponsorContainer}>
+        <div className={styles.frame}>
+          <img id={styles.top} src="assets/Top.svg" alt="top frame" />
+          <img id={styles.left} src="assets/Left.svg" alt="left frame" />
+          <img id={styles.bottom} src="assets/Bottom.svg" alt="bottom frame" />
+          <img id={styles.right} src="assets/Right.svg" alt="right frame" />
+        </div>
+
+        <div className={styles.sponsorList}>
+          {sponsors.map((sponsor) => {
+            return (
+              <div className={styles.card} key={sponsor}>
+                <img src="assets/card2.png" alt={sponsor} />
+                <p>name</p>
+              </div>
+            );
+          })}
+        </div>
+        <h1 className={styles.media}>Media Partners</h1>
+        <div className={styles.sponsorList}>
+          {mediaPartners.map((sponsor) => {
+            return (
+              <div className={styles.card} key={sponsor}>
+                <img src="assets/card2.png" alt={sponsor} />
+                <p>name</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
