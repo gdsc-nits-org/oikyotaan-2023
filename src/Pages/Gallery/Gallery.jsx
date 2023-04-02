@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCoverflow } from "swiper";
 import images from "./images";
+import "./Gallery.scss";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
@@ -30,6 +31,7 @@ const Gallery = () => {
           modules={[Navigation, EffectCoverflow]}
           centeredSlides
           slidesPerView={4}
+          initialSlide={Math.floor(images.length / 2)}
           spaceBetween={-20}
           navigation={{
             nextEl: "#rightArrow",
@@ -48,7 +50,10 @@ const Gallery = () => {
             0: {
               slidesPerView: 1,
             },
-            450: {
+            380: {
+              slidesPerView: 1,
+            },
+            555: {
               slidesPerView: 2,
             },
             789: {
