@@ -3,6 +3,7 @@
   background-size: cover;
   padding-top: 5%;
   color: white;
+  position: relative;
 }
 .heading {
   display: flex;
@@ -88,7 +89,6 @@
       img {
         width: 100%;
         aspect-ratio: 1;
-        object-fit: cover;
         border-radius: 1rem;
       }
       p {
@@ -104,7 +104,26 @@
     margin: 2rem;
   }
 }
-
+#fleft {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 35%;
+}
+#fright {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40%;
+  opacity: 1;
+}
+#frightD {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 40%;
+  opacity: 0;
+}
 @media (max-width: 700px) {
   .heading {
     gap: 2%;
@@ -122,12 +141,27 @@
     .sponsorList {
       .card {
         gap: 2%;
-        img {
-        }
         p {
           font-size: 0.9rem;
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sponsorContainer {
+    .sponsorList {
+      gap: 10%;
+      .card {
+        width: 35%;
+      }
+    }
+  }
+  #fright {
+    opacity: 0;
+  }
+  #frightD {
+    opacity: 1;
   }
 }
