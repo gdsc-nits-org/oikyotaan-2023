@@ -4,5 +4,6 @@ import GalleryCard from "./GalleryCard/GalleryCard";
 import Landing from "./Landing/Landing";
 import Sponsor from "./Sponsor/Sponsor";
 import Footer from "./Footer/Footer";
+import VerticalCarousel from "./VerticalCarousel/VerticalCarousel";
 
-export { Button, Navbar, GalleryCard, Landing, Footer, Sponsor };
+export { Button, Navbar, GalleryCard, Landing, Footer, Sponsor, VerticalCarousel };

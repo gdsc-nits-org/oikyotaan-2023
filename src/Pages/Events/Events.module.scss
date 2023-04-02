@@ -1,0 +1,133 @@
+.container {
+  height: 100vh;
+  background: url("/Gallery/bgtexture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  .bimg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .bimgLeft {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    max-width: 100%;
+  }
+  .bimgRight {
+    position: absolute;
+    transform: scaleX(-1);
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 100%;
+  }
+  .text {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    p {
+      font-size: 4rem;
+      font-family: "Italiana";
+      color: white;
+    }
+  }
+  .cardcontainer {
+    height: 65%;
+    width: 70%;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    .bimgLeft {
+      display: none;
+    }
+    .text {
+      display: flex;
+      p {
+        font-size: 3rem;
+      }
+    }
+    .cardcontainer {
+      height: 80%;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    .bimgLeft {
+      display: none;
+    }
+    .text {
+      display: flex;
+      p {
+        font-size: 3rem;
+      }
+    }
+    .cardcontainer {
+      height: 70%;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    .text {
+      p {
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+    }
+    .cardcontainer {
+      height: 80%;
+    }
+  }
+}
+
+//landscape mode
+@media (max-height: 570px) {
+  .container {
+    height: 130vh;
+    .scrollbtn {
+      bottom: 0;
+    }
+  }
+}
+
+@media (max-height: 500px) {
+  .container {
+    height: 150vh;
+  }
+}
+
+@media (max-height: 430px) {
+  .container {
+    height: 175vh;
+  }
+}
+//iphone SE
+@media (max-height: 390px) {
+  .container {
+    height: 187vh;
+  }
+}
