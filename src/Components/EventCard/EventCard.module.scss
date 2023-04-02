@@ -2,9 +2,13 @@
   height: 92%;
   display: flex;
   padding: 1rem;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   background-color: rgba(167, 103, 41, 0.56);
   color: white;
+  .eventImg {
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
   .desc {
     padding: 1rem;
     display: flex;
@@ -13,12 +17,10 @@
     align-items: center;
     gap: 2vw;
     .title {
-      font-family: "Poppins";
       font-size: 2rem;
       font-weight: 600;
     }
     .content {
-      font-family: "Poppins";
       text-align: center;
       font-weight: 200;
     }
