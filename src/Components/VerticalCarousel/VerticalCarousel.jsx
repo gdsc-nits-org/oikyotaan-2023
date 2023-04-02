@@ -5,7 +5,7 @@ import "swiper/scss/pagination";
 import Card from "../EventCard/EventCard";
 import data from "../../assets/events.json";
 
-import style from "./VerticalCarousel.module.scss";
+import "./VerticalCarousel.scss";
 
 const VerticalCarousel = () => {
   return (
@@ -16,7 +16,7 @@ const VerticalCarousel = () => {
         clickable: true,
       }}
       modules={[Mousewheel, Pagination]}
-      className={style.swiper}
+      className="myswiper"
     >
       {data.map((e) => {
         return (
