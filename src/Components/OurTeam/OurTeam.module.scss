@@ -9,15 +9,30 @@
     flex-direction: column;
     margin-bottom: 5em;
 
-    h2 {
-      color: #fff;
-      font-size: 3em;
-      font-weight: 700;
-      text-align: center;
-      font-family: Italiana;
-      font-weight: 400;
-      line-height: 5rem;
-      letter-spacing: 0.05em;
+    .title-heading {
+      display: flex;
+      gap: 1em;
+
+      img {
+        width: 7em;
+      }
+
+      h2 {
+        color: #fff;
+        font-size: 4.5em;
+        font-weight: 400;
+        text-align: center;
+        font-family: Italiana;
+        font-weight: 400;
+        line-height: 5rem;
+        letter-spacing: 0.05em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    img {
+      width: 17em;
     }
   }
 
@@ -36,37 +51,38 @@
 .team-card {
   background: url("/assets/TeamCardbg.png") no-repeat;
   background-size: cover;
-  width: 30em;
+  width: 28em;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 32em;
+  height: 30em;
   flex-direction: column;
   margin-bottom: 50%;
 }
 
 .team-photo {
-  width: 16em;
-  margin-top: 11em;
+  width: 15em;
+  margin-top: 9.8em;
 }
 
 .team-name {
   font-style: normal;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 400;
   letter-spacing: 5%;
   color: #543300;
   z-index: 10;
   position: relative;
-  top: 0.5em;
+  top: 1em;
   font-family: var(--gdsc-font-1);
 }
 
 .team-bottom {
   height: 10em;
-  width: 20.3em;
+  width: 19.1em;
   position: relative;
-  bottom: 7.5em;
+  left: 0.2em;
+  bottom: 8em;
 }
 
 //   .team-title {

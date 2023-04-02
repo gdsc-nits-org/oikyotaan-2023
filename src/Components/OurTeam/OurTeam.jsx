@@ -28,8 +28,12 @@ const OurTeam = () => {
   return (
     <div className={styles["our-team"]}>
       <div className={styles["team-heading"]}>
-        <h2>MEET OUR TEAM</h2>
-        <img src="/assets/team-heading.png" alt="" />
+        <div className={styles["title-heading"]}>
+          <img src="/assets/title-flower.png" alt="flower" />
+          <h2>Meet Our Team</h2>
+          <img src="/assets/title-flower.png" alt="flower" />
+        </div>
+        <img src="/assets/team-heading.png" alt="flower" />
       </div>
       <div className={styles["devCard-container"]}>
         {teamMembers.map((member) => (

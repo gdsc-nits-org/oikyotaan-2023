@@ -5,6 +5,7 @@
   height: calc(100vh - 3em);
   overflow: scroll;
   background-size: cover;
+  scroll-snap-type: y mandatory;
 
   .team-flower1,
   .team-flower2 {
@@ -29,7 +30,7 @@
     position: fixed;
     z-index: 10;
     top: 50%;
-    font-size: 4em;
+    font-size: 3.6em;
     color: #482c00;
     font-weight: 400;
     font-family: "Italiana", sans-serif;
@@ -47,7 +48,9 @@
     }
 
     .team-flower2 {
-      display: none;
+      bottom: 0;
+      right: 0;
+      // top: 70em;
     }
 
     .role {
