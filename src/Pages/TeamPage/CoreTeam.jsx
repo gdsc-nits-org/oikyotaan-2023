@@ -5,22 +5,14 @@ import { OurTeam } from "../../Components";
 const OurTeamPage = () => {
   const [scroll, setScroll] = useState();
   const [designation, setDesignation] = useState("Developer");
-  const [selectedType, setSelectedType] = useState("core");
+
   useEffect(() => {
-    if (selectedType === "web") {
-      if (scroll > 0.543) {
-        setDesignation("Senior Designer");
-      } else if (scroll > 0.326) {
-        setDesignation("Developer");
-      } else {
-        setDesignation("Senior Developer");
-      }
-    } else if (scroll > 0.543) {
-      setDesignation("Junior Core Member");
+    if (scroll > 0.543) {
+      setDesignation("Senior Core Designer");
     } else if (scroll > 0.326) {
-      setDesignation(" Core Member");
+      setDesignation(" Core Developer");
     } else {
-      setDesignation("Senior Core Member");
+      setDesignation("Senior Core Developer");
     }
   }, [scroll]);
 
@@ -47,12 +39,7 @@ const OurTeamPage = () => {
       <div className={styles.role}>
         <p>{designation}</p>
       </div>
-      <OurTeam
-        setchange={(type) => {
-          setSelectedType(type);
-        }}
-        type={selectedType}
-      />
+      <OurTeam />
     </div>
   );
 };

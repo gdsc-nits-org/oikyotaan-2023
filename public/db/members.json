@@ -1,41 +1,34 @@
 [
-        {
-            "name": "Bijay Jiwrajka",
-            "photoUrl": "/assets/Group 23.png"
-          },
-          {
-            
-            "name" : "Bijay Jiwrajka2",
-            "photoUrl": "/assets/Group 23.png"
-          },
-          {
-            
-            "name" : "Bijay Jiwrajka3",
-            "photoUrl": "/assets/Group 23.png"
-          },
-          {
-            
-            "name" : "Bijay Jiwrajk4",
-            "photoUrl": "/assets/Group 23.png"
-          },
-          {
-            
-            "name" : "Bijay Jiwrajk5",
-            "photoUrl": "/assets/Group 23.png"
-          },
-          {
-            
-            "name" : "Bijay Jiwrajka",
-            "photoUrl": "/assets/Group 23.png"
-          },
-          {
-            
-            "name" : "Bijay Jiwrajka",
-            "photoUrl": "/assets/Group 23.png"
-          },
-          {
-            
-            "name" : "Bijay Jiwrajka",
-            "photoUrl": "/assets/Group 23.png"
-          }
+  {
+    "name": "Bijay Jiwrajka",
+    "photoUrl": "/assets/Group 23.png"
+  },
+  {
+    "name": "Bijay Jiwrajka2",
+    "photoUrl": "/assets/Group 23.png"
+  },
+  {
+    "name": "Bijay Jiwrajka3",
+    "photoUrl": "/assets/Group 23.png"
+  },
+  {
+    "name": "Bijay Jiwrajk4",
+    "photoUrl": "/assets/Group 23.png"
+  },
+  {
+    "name": "Bijay Jiwrajk5",
+    "photoUrl": "/assets/Group 23.png"
+  },
+  {
+    "name": "Bijay Jiwrajka",
+    "photoUrl": "/assets/Group 23.png"
+  },
+  {
+    "name": "Bijay Jiwrajka",
+    "photoUrl": "/assets/Group 23.png"
+  },
+  {
+    "name": "Bijay Jiwrajka",
+    "photoUrl": "/assets/Group 23.png"
+  }
 ]
