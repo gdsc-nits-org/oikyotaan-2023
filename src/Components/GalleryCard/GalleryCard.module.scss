@@ -14,7 +14,19 @@
   border-radius: 2rem;
   filter: none;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 555px) {
+  .container {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    margin-inline: 6rem;
+  }
+  .active {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media only screen and (max-width: 420px) {
   .container {
     width: 20rem;
     height: 20rem;
@@ -24,5 +36,18 @@
   .active {
     width: 20rem;
     height: 20rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .container {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    margin-inline: 20%;
+  }
+  .active {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
   }
 }
