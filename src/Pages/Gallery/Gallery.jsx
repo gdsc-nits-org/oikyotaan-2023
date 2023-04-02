@@ -31,6 +31,7 @@ const Gallery = () => {
           modules={[Navigation, EffectCoverflow]}
           centeredSlides
           slidesPerView={4}
+          initialSlide={Math.floor(images.length / 2)}
           spaceBetween={-20}
           navigation={{
             nextEl: "#rightArrow",
