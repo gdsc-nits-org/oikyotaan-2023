@@ -13,7 +13,7 @@ const Navbar = () => {
         <li>
           <Link to="/events">Events</Link>
         </li>
-        <li>
+        <li className={style.logo}>
           <img src="/images/oikyotan.png" alt="img" width={isMobile ? 100 : 160} />
         </li>
         <li>

@@ -16,6 +16,9 @@
       &:hover {
         scale: 1.1;
       }
+      &.logo:hover {
+        scale: 1;
+      }
       a {
         font-family: "Italiana", serif;
         font-size: 1.4rem;
