@@ -22,7 +22,7 @@ const OurTeamPage = () => {
     } else {
       setDesignation("Senior Core Member");
     }
-  }, [scroll]);
+  }, [scroll, selectedType]);
 
   return (
     <div
@@ -34,16 +34,8 @@ const OurTeamPage = () => {
         );
       }}
     >
-      <img
-        className={styles["team-flower1"]}
-        src="../../../assets/team-flower.png"
-        alt=""
-      />
-      <img
-        className={styles["team-flower2"]}
-        src="../../../assets/team-flower.png"
-        alt=""
-      />
+      <img className={styles["team-flower1"]} src="/assets/team-flower.png" alt="" />
+      <img className={styles["team-flower2"]} src="/assets/team-flower.png" alt="" />
       <div className={styles.role}>
         <p>{designation}</p>
       </div>
