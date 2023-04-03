@@ -39,7 +39,7 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 5%;
+  top: 2%;
   .design {
     img {
       max-width: 80%;
@@ -149,5 +149,30 @@
     .tt {
       font-size: 3rem;
     }
+  }
+}
+
+//landscape mode
+@media (max-height: 570px) {
+  .container {
+    height: 130vh;
+  }
+}
+
+@media (max-height: 500px) {
+  .container {
+    height: 150vh;
+  }
+}
+
+@media (max-height: 430px) {
+  .container {
+    height: 175vh;
+  }
+}
+//iphone SE
+@media (max-height: 390px) {
+  .container {
+    height: 197vh;
   }
 }

@@ -17,7 +17,7 @@
         scale: 1.1;
       }
       &.logo:hover {
-        scale: 1;
+        scale: 1.1;
       }
       a {
         font-family: "Italiana", serif;
@@ -27,11 +27,34 @@
         color: #543300;
         letter-spacing: 2px;
 
+        // &.active {
+        //   text-decoration: underline;
+        //   text-decoration-color: #da2925;
+        //   text-decoration-thickness: 0.2rem;
+        //  text-underline-offset: 0.4rem;
+        // }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 0.2rem;
+          bottom: -0.4rem;
+          left: 0;
+          background-color: #da2925;
+          border-radius: 20%;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+        }
         &.active {
-          text-decoration: underline;
-          text-decoration-color: #da2925;
-          text-decoration-thickness: 0.2rem;
-          text-underline-offset: 0.4rem;
+          &::after {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+          }
         }
       }
     }
