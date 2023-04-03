@@ -16,12 +16,12 @@
       align-items: center;
 
       img {
-        width: 7em;
+        width: 5em;
       }
 
       h2 {
         color: #fff;
-        font-size: 4.5em;
+        font-size: 4em;
         font-weight: 600;
         text-align: center;
         font-family: Italiana;
@@ -35,7 +35,7 @@
     }
 
     img {
-      width: 17em;
+      width: 13em;
     }
   }
 
@@ -60,6 +60,7 @@
       &:last-child {
         margin-right: 0;
       }
+
       &.active-button {
         color: #fff;
         background-color: #543300;
@@ -99,7 +100,7 @@
 
 .team-name {
   font-style: normal;
-  font-size: 2.5em;
+  font-size: 2.1em;
   font-weight: 400;
   letter-spacing: 5%;
   color: #543300;

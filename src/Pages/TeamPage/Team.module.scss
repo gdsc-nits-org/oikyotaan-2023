@@ -32,13 +32,13 @@
 
   .role {
     position: fixed;
-    z-index: -1000;
-    top: 50%;
+    z-index: -100;
+    top: 55%;
     font-size: 3.8em;
     color: #482c00;
     font-weight: 400;
-    font-family: var(--oikyotaan-font-1);
     left: 60%;
+    font-family: var(--gdsc-font-1);
   }
 }
 
@@ -66,6 +66,7 @@
     .role {
       font-size: 1.2em;
       letter-spacing: 0;
+      font-family: "Poppins", sans-serif;
     }
   }
 }
