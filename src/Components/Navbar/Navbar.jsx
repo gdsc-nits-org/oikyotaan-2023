@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaArrowLeft } from "react-icons/fa";
 import style from "./Navbar.module.scss";
@@ -19,27 +19,44 @@ const Navbar = () => {
       <ul className={mobile === false ? style.nav : style.navmob}>
         <li className={style.li1}>
           <img src="/images/home.png" alt="img" className={style.imgm} />
-          <Link to="/">Home</Link>
+          <NavLink to="/" className={({ isActive }) => (isActive ? style.active : "")}>
+            Home
+          </NavLink>
         </li>
         <li>
           <img src="/images/clipboard.png" alt="img" className={style.imgm} />
-          <Link to="/events">Events</Link>
+          <NavLink
+            to="/events"
+            className={({ isActive }) => (isActive ? style.active : "")}
+          >
+            Events
+          </NavLink>
         </li>
-        <li>
+        <li className={style.logo}>
           <img
             src="/images/oikyotan.svg"
             alt="img"
-            width={isMobile ? 0 : 140}
+            width={isMobile ? 0 : 160}
             className={style.img1}
           />
         </li>
         <li className={style.li5}>
           <img src="/images/image.png" alt="img" className={style.imgm} />
-          <Link to="/gallery">Gallery</Link>
+          <NavLink
+            to="/gallery"
+            className={({ isActive }) => (isActive ? style.active : "")}
+          >
+            Gallery
+          </NavLink>
         </li>
         <li>
           <img src="/images/users.png" alt="img" className={style.imgm} />
-          <Link to="/team">Team</Link>
+          <NavLink
+            to="/team"
+            className={({ isActive }) => (isActive ? style.active : "")}
+          >
+            Team
+          </NavLink>
         </li>
       </ul>
 

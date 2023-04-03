@@ -2,7 +2,7 @@
   height: 100%;
   overflow: hidden;
   .main {
-    height: calc(100% - 3rem);
+    height: calc(100vh - 3rem);
     position: relative;
     overflow: hidden;
     .bgImg {
@@ -102,7 +102,7 @@
     }
     .logo {
       top: 35%;
-      right: -4%;
+      right: 0;
     }
   }
 }

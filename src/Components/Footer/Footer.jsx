@@ -5,11 +5,11 @@ import style from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <div>
+    <div className={style["footer-container"]}>
       <div className={style.Footer}>
         <div className={style.footerupper}>
           <div className={style.footerupperleft}>
-            <img src="/assets/footer_gdsc_logo.png" alt="gdsc_logo" />
+            <img src="/assets/logo_txt.png" alt="gdsc_logo" />
           </div>
           <div className={style.footeruppermiddle}>
             <img src="/assets/oikyotaan_logo.png" alt="oikyotaan_logo" />

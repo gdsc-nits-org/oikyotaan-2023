@@ -1,0 +1,9 @@
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  background-image: none !important;
+}
+@media only screen and (min-width: 1000px) {
+  .swiper {
+    width: 93%;
+  }
+}
