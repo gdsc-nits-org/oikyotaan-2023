@@ -15,12 +15,22 @@ const OurTeamPage = () => {
       } else {
         setDesignation("Senior Developer");
       }
-    } else if (scroll > 0.543) {
-      setDesignation("Junior Core Member");
-    } else if (scroll > 0.326) {
-      setDesignation(" Core Member");
+    } else if (scroll > 0.797) {
+      setDesignation("Marketing Head");
+    } else if (scroll > 0.607) {
+      setDesignation("Hospitality Head");
+    } else if (scroll > 0.512) {
+      setDesignation("Executive Head");
+    } else if (scroll > 0.417) {
+      setDesignation("Infra Team Head");
+    } else if (scroll > 0.31) {
+      setDesignation("Publicity Team Head and Event Management Head");
+    } else if (scroll > 0.22) {
+      setDesignation("Executive Head");
+    } else if (scroll > 0.12) {
+      setDesignation("Event Management Head");
     } else {
-      setDesignation("Senior Core Member");
+      setDesignation("Web and Marketing Head");
     }
   }, [scroll, selectedType]);
 

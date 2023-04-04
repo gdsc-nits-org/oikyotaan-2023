@@ -3,36 +3,54 @@ import styles from "./OurTeam.module.scss";
 
 const coreMembers = [
   {
-    name: "Core Member 1",
-    photoUrl: "/assets/Group 23.png",
+    name: "Arkadeep Kashyap",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613577/Oikyotaan/IMG-20230322-WA0038_-_Arkadeep_Kashyap_pisyoc.jpg",
   },
   {
-    name: "Core Member 2",
-    photoUrl: "/assets/Group 23.png",
+    name: "Ankita Baidya",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613013/Oikyotaan/IMG_20230402_185125_-_Ankita_Baidya_o7xln9.jpg",
   },
   {
-    name: "Core Member 3",
-    photoUrl: "/assets/Group 23.png",
+    name: "Suvadip Sau",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613517/Oikyotaan/WhatsApp_Image_2023-04-03_at_7.50.19_AM_-_Suvadip_Sau_i5kut0.jpg",
   },
   {
-    name: "Core Member 4",
-    photoUrl: "/assets/Group 23.png",
+    name: "Tanupriya Roy",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613523/Oikyotaan/Tanupriya_Roy_-_ECEA027_TANUPRIYA_ROY_nwjdoh.jpg",
   },
   {
-    name: "Core Member 5",
-    photoUrl: "/assets/Group 23.png",
+    name: "Subhajeet Dey",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613534/Oikyotaan/pphoto_-_CSE-A-008_Subhajeet_Dey_fvod1f.jpg",
   },
   {
-    name: "Core Member 6",
-    photoUrl: "/assets/Group 23.png",
+    name: "Swarup Das",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613555/Oikyotaan/IMG20221214151045_-_Swarup_Das_j0rhhu.jpg",
   },
   {
-    name: "Core Member 7",
-    photoUrl: "/assets/Group 23.png",
+    name: "Reetika Saha",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613566/Oikyotaan/IMG_20220417_083447_917_-_Reetika_Saha_okntjn.jpg",
   },
   {
-    name: "Core Member 8",
-    photoUrl: "/assets/Group 23.png",
+    name: "Pranab Sarkar",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680612860/Oikyotaan/WhatsApp_Image_2023-04-02_at_5.42.01_PM_-_pranab_sarkar_tcfmho.jpg",
+  },
+  {
+    name: "Satyik Pritam Yogi",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613582/Oikyotaan/IMG_20230320_043036_621_-_Satyik_pritam_Yogi_pxripr.jpg",
+  },
+  {
+    name: "Reeya Hazarika",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613587/Oikyotaan/FB3205B0-965B-4DE0-A58F-57E7E4A90D37_-_Reeya_Hazarika_pz5prj.jpg",
   },
 ];
 
