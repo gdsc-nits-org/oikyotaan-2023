@@ -164,4 +164,18 @@
   #frightD {
     opacity: 1;
   }
+  .sponsorContainer {
+    .frame {
+      #top {
+        top: 5%;
+      }
+      #bottom {
+        top: 93%;
+      }
+      #left,
+      #right {
+        height: 95%;
+      }
+    }
+  }
 }
