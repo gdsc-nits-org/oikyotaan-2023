@@ -1,11 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
-
 .container {
-  height: 100vh;
+  height: 100svh;
   background: url("/Gallery/bgtexture.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  .lottie1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .lottie2 {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 .bimg {
   height: 100%;
@@ -13,17 +22,10 @@
   z-index: 1;
 }
 .bimgLeft {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
-  max-width: 100%;
-}
-.bimgRight {
-  position: absolute;
-  transform: scaleX(-1);
-  top: 0;
-  left: 0;
   height: 100%;
   max-width: 100%;
 }
@@ -109,43 +111,30 @@
   .bimg {
     object-fit: cover;
   }
-  .bimgLeft,
-  .bimgRight {
+  .lottie2 {
+    display: none;
+  }
+  .bimgLeft {
+    display: block;
     max-width: 50%;
     object-fit: cover;
     object-position: bottom;
-  }
-  .bimgLeft {
     transform: scaleY(-1);
   }
   .text {
     gap: 0.5rem;
     .design {
-      width: 4rem;
+      width: 5.5rem;
     }
     .tt {
       font-size: 3rem;
     }
   }
 }
-@media only screen and (min-width: 790px) and (max-width: 1000px) {
-  .bimgLeft,
-  .bimgRight {
-    max-width: 50%;
-    object-fit: fill;
-  }
-}
+
 @media only screen and (min-width: 500px) and (max-width: 789px) {
-  .bimgLeft,
-  .bimgRight {
-    max-width: 50%;
-    object-fit: fill;
-  }
   .text {
     gap: 0.5rem;
-    .design {
-      width: 5rem;
-    }
     .tt {
       font-size: 3rem;
     }

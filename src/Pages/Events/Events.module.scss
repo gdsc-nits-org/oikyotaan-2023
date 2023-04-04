@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  height: 100svh;
   background: url("/Gallery/bgtexture.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,6 +8,17 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  .lottie1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .lottie2 {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   .bimg {
     position: absolute;
     height: 100%;
@@ -15,17 +26,10 @@
   }
 
   .bimgLeft {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
-    max-width: 100%;
-  }
-  .bimgRight {
-    position: absolute;
-    transform: scaleX(-1);
-    top: 0;
-    left: 0;
     height: 100%;
     max-width: 100%;
   }
@@ -84,15 +88,7 @@
 }
 @media (max-width: 700px) {
   .container {
-    .bimgLeft,
-    .bimgRight {
-      max-width: 50%;
-      object-fit: fill;
-    }
     .text {
-      .design {
-        width: 5rem;
-      }
       p {
         font-size: 3rem;
       }
@@ -109,22 +105,24 @@
 
 @media (max-width: 500px) {
   .container {
-    .bimgLeft,
-    .bimgRight {
+    .lottie2 {
+      display: none;
+    }
+    .bimgLeft {
       max-width: 50%;
       object-fit: cover;
       object-position: bottom;
-    }
-    .bimgLeft {
+      display: block;
       transform: scaleY(-1);
     }
     .text {
       margin-top: 5rem;
       .design {
-        width: 4rem;
+        width: 5.5rem;
       }
       p {
         font-size: 3rem;
+        font-weight: 900;
       }
     }
     .cardcontainer {
