@@ -1,36 +1,25 @@
-.footer-container {
-  position: static;
-  bottom: 0;
-  width: 100%;
-}
-
 .Footer {
   background-image: url("/assets/kolkata_theme_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   padding: 2%;
 }
 
 .footerupper {
   display: flex;
   justify-content: space-between;
-
   .footerupperleft {
     img {
       height: 7em;
       border-radius: 2em;
-      background: rgb(255, 255, 255);
+      background: rgb(255, 255, 255, 0.7);
       padding: 1em;
     }
-    margin-left: 2em;
-    margin-top: 1em;
   }
 
   .footeruppermiddle {
     img {
       width: 15em;
-      // height: 5em;
     }
   }
 
@@ -40,7 +29,7 @@
       aspect-ratio: 1;
       object-fit: cover;
       padding: 1em;
-      background: white;
+      background: rgb(255, 255, 255, 0.7);
       border-radius: 50%;
     }
   }
@@ -48,14 +37,14 @@
 
 .footermiddle {
   display: flex;
-  // align-items: center;
+  align-items: center;
   font: var(--gdsc-font-1);
   justify-content: space-around;
   font-size: 1.32em;
   padding-top: 2em;
   padding-bottom: 0.5em;
   font-weight: 600;
-
+  letter-spacing: 1.5px;
   .footermiddleleft {
     display: flex;
     justify-content: center;
@@ -86,6 +75,8 @@
     flex-direction: column;
     gap: 1em;
     .facebook {
+      color: black;
+      text-decoration: none;
       display: flex;
       align-items: center;
       gap: 1em;
@@ -95,6 +86,8 @@
       }
     }
     .instagram {
+      color: black;
+      text-decoration: none;
       display: flex;
       align-items: center;
       gap: 1em;
@@ -122,8 +115,6 @@
         height: 12vw;
         padding: 1vw;
       }
-      margin-left: 1em;
-      margin-top: 0.25em;
     }
 
     .footeruppermiddle {

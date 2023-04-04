@@ -1,6 +1,9 @@
 /* eslint-disable import/no-unresolved */
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCoverflow } from "swiper";
+import Lottie from "react-lottie";
+import { useMediaQuery } from "../../Hooks";
 import images from "./images";
 import "./Gallery.scss";
 import "swiper/css";
@@ -9,11 +12,40 @@ import "swiper/css/effect-coverflow";
 import styles from "./Gallery.module.scss";
 import { GalleryCard } from "../../Components/index";
 const Gallery = () => {
+  const [lottie1, setLottie1] = useState("");
+  const isMobile = useMediaQuery("(max-width: 700px)");
+  useEffect(() => {
+    fetch("/lotties/blossom-lottie.json")
+      .then((data) => data.json())
+      .then((res) => setLottie1(res));
+  }, []);
+
+  const defaultOptions1 = {
+    loop: true,
+    autoplay: true,
+    animationData: lottie1,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div className={styles.container}>
       <img className={styles.bimg} src="/Gallery/bg.png" alt="background" />
+      <div className={styles.lottie1}>
+        <Lottie
+          options={defaultOptions1}
+          height={isMobile ? 250 : 400}
+          width={isMobile ? 250 : 400}
+        />
+      </div>
+      <div className={styles.lottie2}>
+        <Lottie
+          options={defaultOptions1}
+          height={isMobile ? 250 : 400}
+          width={isMobile ? 250 : 400}
+        />
+      </div>
       <img className={styles.bimgLeft} alt="flower" src="/Gallery/flowers.png" />
-      <img className={styles.bimgRight} alt="flower" src="/Gallery/flowers.png" />
       <div className={styles.text}>
         <div className={styles.design}>
           <img src="/Gallery/design.png" alt="design" />

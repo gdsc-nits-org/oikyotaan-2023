@@ -4,7 +4,6 @@
 import { useRef, useState } from "react";
 import style from "./Home.module.scss";
 import { Landing, Sponsor } from "../../Components";
-
 const Home = () => {
   const audioRef = useRef(null);
   const [play, setPlay] = useState(false);
