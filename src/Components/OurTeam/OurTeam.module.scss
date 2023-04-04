@@ -1,5 +1,4 @@
 .our-team {
-  // width: 70%;
   margin: 5rem auto;
 
   .team-heading {
@@ -74,6 +73,7 @@
   .devCard-container {
     display: flex;
     flex-direction: column;
+    gap: 30rem;
 
     .devCard {
       width: 16em;
@@ -92,7 +92,6 @@
   align-items: center;
   height: 30em;
   flex-direction: column;
-  margin-bottom: 50%;
   margin-left: 15vw;
   z-index: -100;
 }
@@ -186,6 +185,7 @@
     }
 
     .devCard-container {
+      gap: 12rem;
       .devCard {
         width: 16em;
         height: 20em;

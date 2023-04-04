@@ -131,6 +131,11 @@ const webMembers = [
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680630450/Pratik_Majumdar_Square_-_Pratik_Majumdar_xkkrwr.jpg",
   },
+  {
+    name: "Aniruddha Dutta",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680637115/IMG_20211004_100938_2_-_Aniruddha_Dutta_sgvvro.jpg",
+  },
 
   {
     name: "Jyotishka Bhattacharjee",
@@ -139,11 +144,16 @@ const webMembers = [
   },
 
   {
-    name: "Aniruddha Dutta",
+    name: "Shibam Debnath",
     photoUrl:
-      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680637115/IMG_20211004_100938_2_-_Aniruddha_Dutta_sgvvro.jpg",
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680630089/PXL_20230318_152952455.NIGHT_-_Shibam_debnath_zcmcif.jpg",
   },
 
+  {
+    name: "Diya Karmakar",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680637117/WhatsApp_Image_2023-04-04_at_11.35.10_PM_-_Diya_Karmakar_n0se4f.jpg",
+  },
   {
     name: "Bijay Jiwrajka",
     photoUrl:
@@ -162,12 +172,6 @@ const webMembers = [
   },
 
   {
-    name: "Dimpal Kalita ",
-    photoUrl:
-      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680630089/Screenshot_2023-03-22-01-06-43-57_6012fa4d4ddec268fc5c7112cbb265e7_-_Dimpal_Kalita_yiyqua.jpg",
-  },
-
-  {
     name: "Priyajit Paul",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680630092/WhatsApp_Image_2023-04-04_at_7.49.09_AM_-_Priyajit_Paul_pnjbyv.jpg",
@@ -177,16 +181,11 @@ const webMembers = [
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680630449/myself_-_Mrinal_Kangsa_Banik_bjpvnn.jpg",
   },
-  {
-    name: "Shibam Debnath",
-    photoUrl:
-      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680630089/PXL_20230318_152952455.NIGHT_-_Shibam_debnath_zcmcif.jpg",
-  },
 
   {
-    name: "Diya Karmakar",
+    name: "Dimpal Kalita ",
     photoUrl:
-      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680637117/WhatsApp_Image_2023-04-04_at_11.35.10_PM_-_Diya_Karmakar_n0se4f.jpg",
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680630089/Screenshot_2023-03-22-01-06-43-57_6012fa4d4ddec268fc5c7112cbb265e7_-_Dimpal_Kalita_yiyqua.jpg",
   },
   {
     name: "Tithi Jha",
