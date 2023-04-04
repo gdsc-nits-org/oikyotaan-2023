@@ -7,6 +7,7 @@ import Footer from "./Footer/Footer";
 import OurTeam from "./OurTeam/OurTeam";
 import EventCarousel from "./EventCarousel/EventCarousel";
 import ArtistCard from "./ArtistCard/ArtistCard";
+import About from "./About/About";
 export {
   Button,
   Navbar,
@@ -17,4 +18,5 @@ export {
   EventCarousel,
   ArtistCard,
   OurTeam,
+  About,
 };

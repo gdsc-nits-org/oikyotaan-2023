@@ -11,13 +11,15 @@ import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import styles from "./Gallery.module.scss";
 import { GalleryCard } from "../../Components/index";
-const Gallery = () => {
+const Gallery = ({ setLoading }) => {
   const [lottie1, setLottie1] = useState("");
   const isMobile = useMediaQuery("(max-width: 700px)");
   useEffect(() => {
+    setLoading(true);
     fetch("/lotties/blossom-lottie.json")
       .then((data) => data.json())
-      .then((res) => setLottie1(res));
+      .then((res) => setLottie1(res))
+      .finally(() => setLoading(false));
   }, []);
 
   const defaultOptions1 = {

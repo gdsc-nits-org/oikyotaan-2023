@@ -4,13 +4,15 @@ import { useMediaQuery } from "../../Hooks";
 import style from "./Events.module.scss";
 import { EventCarousel } from "../../Components";
 
-const Events = () => {
+const Events = ({ setLoading }) => {
   const [lottie1, setLottie1] = useState("");
   const isMobile = useMediaQuery("(max-width: 700px)");
   useEffect(() => {
+    setLoading(true);
     fetch("/lotties/blossom-lottie.json")
       .then((data) => data.json())
-      .then((res) => setLottie1(res));
+      .then((res) => setLottie1(res))
+      .finally(() => setLoading(false));
   }, []);
 
   const defaultOptions1 = {
