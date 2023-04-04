@@ -1,8 +1,7 @@
 .our-team {
   background: url(/assets/bg.png), url(/Gallery/bgtexture.png);
   opacity: 90%;
-  background-position: center;
-  height: 100vh;
+  height: 100svh;
   overflow: scroll;
   background-size: cover;
   scroll-snap-type: y mandatory;
@@ -11,23 +10,18 @@
   &::-webkit-scrollbar {
     display: none;
   }
-
-  .team-flower1,
-  .team-flower2 {
-    width: 30em;
-    height: 30em;
+  .lottie1 {
     position: absolute;
-    user-select: none;
+    top: 0;
+    left: 0;
     z-index: -10;
   }
-
-  .team-flower1 {
-    left: 0;
+  .lottie2 {
     transform: rotateY(180deg);
-  }
-
-  .team-flower2 {
+    position: absolute;
+    top: 0;
     right: 0;
+    z-index: -10;
   }
 
   .role {
@@ -42,27 +36,21 @@
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1130px) {
   .our-team {
     .role {
-      display: none;
+      font-size: 2em;
+      letter-spacing: 0;
+      left: 60%;
+      font-family: "Poppins", sans-serif;
     }
   }
 }
 @media screen and (max-width: 600px) {
   .our-team {
-    .team-flower1,
-    .team-flower2 {
-      width: 20em;
-      height: 20em;
+    .lottie2 {
+      display: none;
     }
-
-    .team-flower2 {
-      right: 0;
-      bottom: 0;
-      transform: rotateX(180deg);
-    }
-
     .role {
       font-size: 1.2em;
       letter-spacing: 0;
