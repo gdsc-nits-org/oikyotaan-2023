@@ -12,7 +12,7 @@ const Footer = () => {
             <img src="/assets/logo_txt.png" alt="gdsc_logo" />
           </div>
           <div className={style.footeruppermiddle}>
-            <img src="/assets/oikyotaan_logo.png" alt="oikyotaan_logo" />
+            <img src="/images/oikyotan.svg" alt="oikyotaan_logo" />
           </div>
           <div className={style.footerupperright}>
             <img src="/assets/nits_logo.png" alt="nits_logo" />
@@ -23,22 +23,22 @@ const Footer = () => {
           <div className={style.footermiddleleft}>
             <div className={style.location}>
               <CiLocationOn className={style.locationlogo} />
-              <div> NIT Silchar, Assam, India 788010 </div>
+              <p> NIT Silchar, Assam, India 788010 </p>
             </div>
             <div className={style.phoneno}>
               <FiPhone className={style.phonenologo} />
-              <div> 03842-228479 </div>
+              <p> 03842-228479 </p>
             </div>
           </div>
           <div className={style.footermiddleright}>
-            <div className={style.facebook}>
+            <a className={style.facebook} href="http">
               <FiFacebook className={style.facebooklogo} />
-              <div> Facebook </div>
-            </div>
-            <div className={style.instagram}>
+              <p> Facebook </p>
+            </a>
+            <a className={style.instagram} href="http">
               <FiInstagram className={style.instagramlogo} />
-              <div> Instagram </div>
-            </div>
+              <p> Instagram </p>
+            </a>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import Sponsor from "./Sponsor/Sponsor";
 import Footer from "./Footer/Footer";
 import VerticalCarousel from "./VerticalCarousel/VerticalCarousel";
 import OurTeam from "./OurTeam/OurTeam";
-
+import ArtistCard from "./ArtistCard/ArtistCard";
 export {
   Button,
   Navbar,
@@ -15,5 +15,6 @@ export {
   Footer,
   Sponsor,
   VerticalCarousel,
+  ArtistCard,
   OurTeam,
 };
