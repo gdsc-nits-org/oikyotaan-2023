@@ -4,6 +4,7 @@ import GalleryCard from "./GalleryCard/GalleryCard";
 import Landing from "./Landing/Landing";
 import Sponsor from "./Sponsor/Sponsor";
 import Footer from "./Footer/Footer";
+import OurTeam from "./OurTeam/OurTeam";
 import EventCarousel from "./EventCarousel/EventCarousel";
 import ArtistCard from "./ArtistCard/ArtistCard";
 export {
@@ -15,4 +16,5 @@ export {
   Sponsor,
   EventCarousel,
   ArtistCard,
+  OurTeam,
 };
