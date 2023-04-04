@@ -4,8 +4,8 @@ import GalleryCard from "./GalleryCard/GalleryCard";
 import Landing from "./Landing/Landing";
 import Sponsor from "./Sponsor/Sponsor";
 import Footer from "./Footer/Footer";
-import VerticalCarousel from "./VerticalCarousel/VerticalCarousel";
 import OurTeam from "./OurTeam/OurTeam";
+import EventCarousel from "./EventCarousel/EventCarousel";
 import ArtistCard from "./ArtistCard/ArtistCard";
 export {
   Button,
@@ -14,7 +14,7 @@ export {
   Landing,
   Footer,
   Sponsor,
-  VerticalCarousel,
+  EventCarousel,
   ArtistCard,
   OurTeam,
 };
