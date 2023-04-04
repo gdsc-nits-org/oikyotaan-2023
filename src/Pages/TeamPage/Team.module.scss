@@ -31,13 +31,13 @@
   }
 
   .role {
-    position: fixed;
+    position: absolute;
     z-index: -100;
     top: 55%;
-    font-size: 3.6em;
+    font-size: 3.4em;
     color: #482c00;
     font-weight: 400;
-    left: 55%;
+    left: 52%;
     font-family: var(--gdsc-font-1);
   }
 }

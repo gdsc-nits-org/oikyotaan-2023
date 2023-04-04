@@ -94,9 +94,11 @@
 }
 
 .team-photo {
-  width: 15em;
+  width: 17.5em;
   height: 20.45em;
   margin-top: 9.7em;
+  aspect-ratio: 0.3;
+  object-fit: cover;
 }
 
 .team-name {
