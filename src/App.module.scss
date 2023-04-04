@@ -30,3 +30,14 @@
     }
   }
 }
+
+@media (orientation: portrait) {
+  .loader {
+    .circle {
+      width: 40%;
+    }
+    .logo {
+      width: 20%;
+    }
+  }
+}
