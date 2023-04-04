@@ -1,7 +1,7 @@
 import styles from "./Sponsor.module.scss";
 const Sponsor = () => {
-  const mediaPartners = [1, 2, 3];
-  const sponsors = [1, 2, 3, 4, 5, 6];
+  // const mediaPartners = [1,2,3,4,5,6,7,8,9]
+  // const sponsors = [1, 2, 3,4];
 
   return (
     <div className={styles.main}>
@@ -20,16 +20,17 @@ const Sponsor = () => {
         </div>
 
         <div className={styles.sponsorList}>
-          {sponsors.map((sponsor) => {
+          {/* {sponsors.map((sponsor) => {
             return (
               <div className={styles.card} key={sponsor}>
                 <img src="assets/card2.png" alt={sponsor} />
                 <p>name</p>
               </div>
             );
-          })}
+          })} */}
+          <h1>To be announced soon..........</h1>
         </div>
-        <h1 className={styles.media}>Media Partners</h1>
+        {/* <h1 className={styles.media}>Media Partners</h1>
         <div className={styles.sponsorList}>
           {mediaPartners.map((sponsor) => {
             return (
@@ -39,7 +40,7 @@ const Sponsor = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
       <img id={styles.frightD} src="assets/Flowerright_down.svg" alt="" />
     </div>
