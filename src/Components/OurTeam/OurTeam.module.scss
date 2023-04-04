@@ -43,27 +43,29 @@
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-
+    gap: 3rem;
     button {
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       font-weight: bold;
-      background-color: #ffebcc;
-      border: 2px solid black;
-      border-radius: 0.5rem;
+      border: none;
       cursor: pointer;
-      margin-right: 5rem;
       transition: all 0.2s ease-in-out;
       margin-top: -3rem;
       margin-bottom: 1rem;
+      background: transparent;
+      color: #543300;
+      position: relative;
 
-      &:last-child {
-        margin-right: 0;
-      }
-
-      &.active-button {
-        color: #fff;
-        background-color: #543300;
+      &.active-button::after {
+        content: "";
+        position: absolute;
+        bottom: -1em;
+        left: -0.5rem;
+        right: -0.5rem;
+        height: 1em;
+        background-size: contain;
+        background-image: url("assets/underline-team.png");
+        background-repeat: no-repeat;
       }
     }
   }
@@ -94,11 +96,12 @@
 }
 
 .team-photo {
-  width: 17.5em;
+  width: 14em;
   height: 20.45em;
   margin-top: 9.7em;
   aspect-ratio: 0.3;
   object-fit: cover;
+  margin-left: 0.3em;
 }
 
 .team-name {
@@ -118,7 +121,7 @@
   width: 19.1em;
   position: relative;
   left: 0.2em;
-  bottom: 8em;
+  bottom: 7.9em;
 }
 
 @media screen and (max-width: 600px) {

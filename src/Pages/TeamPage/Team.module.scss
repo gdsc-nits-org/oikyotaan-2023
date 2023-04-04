@@ -18,7 +18,7 @@
     height: 30em;
     position: absolute;
     user-select: none;
-    z-index: -2;
+    z-index: -10;
   }
 
   .team-flower1 {
@@ -32,7 +32,7 @@
 
   .role {
     position: absolute;
-    z-index: -100;
+    z-index: -1;
     top: 55%;
     font-size: 3.4em;
     color: #482c00;
@@ -66,6 +66,7 @@
     .role {
       font-size: 1.2em;
       letter-spacing: 0;
+      left: 60%;
       font-family: "Poppins", sans-serif;
     }
   }

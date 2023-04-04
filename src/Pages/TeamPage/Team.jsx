@@ -8,12 +8,14 @@ const OurTeamPage = () => {
   const [selectedType, setSelectedType] = useState("core");
   useEffect(() => {
     if (selectedType === "web") {
-      if (scroll > 0.543) {
-        setDesignation("Senior Designer");
+      if (scroll > 0.54) {
+        setDesignation("Deputy UI/UX Head");
+      } else if (scroll > 0.543) {
+        setDesignation("UI/UX Head");
       } else if (scroll > 0.326) {
-        setDesignation("Developer");
+        setDesignation("Deputy Web Head");
       } else {
-        setDesignation("Senior Developer");
+        setDesignation("Web Head");
       }
     } else if (scroll > 0.797) {
       setDesignation("Marketing Head");

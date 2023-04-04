@@ -114,7 +114,7 @@ const OurTeam = ({ setchange, type }) => {
           Core Team
         </button>
         <button
-          className={type === "web" ? styles["active-button"] : ""}
+          className={type === "web" ? styles["active-button"] : " "}
           onClick={() => setchange("web")}
         >
           Web Team
