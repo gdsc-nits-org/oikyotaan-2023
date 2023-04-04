@@ -4,6 +4,19 @@ import GalleryCard from "./GalleryCard/GalleryCard";
 import Landing from "./Landing/Landing";
 import Sponsor from "./Sponsor/Sponsor";
 import Footer from "./Footer/Footer";
-import VerticalCarousel from "./VerticalCarousel/VerticalCarousel";
-
-export { Button, Navbar, GalleryCard, Landing, Footer, Sponsor, VerticalCarousel };
+import OurTeam from "./OurTeam/OurTeam";
+import EventCarousel from "./EventCarousel/EventCarousel";
+import ArtistCard from "./ArtistCard/ArtistCard";
+import About from "./About/About";
+export {
+  Button,
+  Navbar,
+  GalleryCard,
+  Landing,
+  Footer,
+  Sponsor,
+  EventCarousel,
+  ArtistCard,
+  OurTeam,
+  About,
+};

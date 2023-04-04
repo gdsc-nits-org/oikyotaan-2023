@@ -2,7 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { Navbar, Footer } from "./Components";
 import styles from "./App.module.scss";
-import { Error, Home, Gallery, Events } from "./Pages";
+
+import { Error, Home, Gallery, Events, Artist, TeamPage } from "./Pages";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -18,8 +19,10 @@ const App = () => {
       )}
       <Routes>
         <Route path="/" element={<Home setLoading={setLoading} />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/events" element={<Events />} />
+        <Route path="/gallery" element={<Gallery setLoading={setLoading} />} />
+        <Route path="/events" element={<Events setLoading={setLoading} />} />
+        <Route path="/artists" element={<Artist />} />
+        <Route path="/team" element={<TeamPage setLoading={setLoading} />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
