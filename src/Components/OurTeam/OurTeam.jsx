@@ -200,10 +200,9 @@ const OurTeam = ({ setchange, type }) => {
       <div className={styles["team-heading"]}>
         <div className={styles["title-heading"]}>
           <img src="/assets/title-flower.png" alt="flower" />
-          <h2>Meet Our Team</h2>
+          <p>Meet Our Team</p>
           <img src="/assets/title-flower.png" alt="flower" />
         </div>
-        <img src="/assets/team-heading.png" alt="flower" />
       </div>
 
       <div className={styles["team-type-buttons"]}>

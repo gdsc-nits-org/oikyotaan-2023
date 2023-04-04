@@ -2,7 +2,7 @@
   height: 100%;
   overflow: hidden;
   .main {
-    height: calc(100vh - 3rem);
+    height: calc(100svh - 3rem);
     position: relative;
     overflow: hidden;
     .bgImg {
@@ -76,7 +76,7 @@
   }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 862px) {
   .container {
     .main {
       .bgImg {
@@ -103,6 +103,15 @@
     .logo {
       top: 35%;
       right: 0;
+    }
+  }
+}
+@media (max-width: 470px) {
+  .container {
+    .main {
+      .bgImg {
+        width: fit-content;
+      }
     }
   }
 }

@@ -17,29 +17,47 @@
       justify-content: flex-start;
       margin-left: 2rem;
       position: relative;
+      cursor: pointer;
       .eventImg {
         width: 100%;
         height: 100%;
         position: relative;
         z-index: 2;
         transition: all 1s ease-in-out;
-        opacity: 0;
+        //opacity: 0;
+        // clip-path: polygon(
+        //   9.59% 38.41%,
+        //   12.79% 26.87%,
+        //   20.86% 16.23%,
+        //   34.27% 10.7%,
+        //   49.94% 8.09%,
+        //   65.91% 10.7%,
+        //   80.64% 16.87%,
+        //   87.41% 26.87%,
+        //   91.39% 38.41%,
+        //   91.39% 93.74%,
+        //   9.59% 93.74%
+        // );
         clip-path: polygon(
-          9.59% 38.41%,
-          12.79% 26.87%,
-          20.86% 16.23%,
-          34.27% 10.7%,
-          49.94% 8.09%,
-          65.91% 10.7%,
-          80.64% 16.87%,
-          87.41% 26.87%,
-          91.39% 38.41%,
-          91.39% 93.74%,
-          9.59% 93.74%
+          9.26% 37.43%,
+          12.13% 25.84%,
+          19.67% 17.16%,
+          28.52% 12.86%,
+          35.06% 9.68%,
+          48.85% 7.92%,
+          60.9% 9.68%,
+          72.13% 12.86%,
+          84.26% 20.26%,
+          89.73% 28.53%,
+          89.73% 37.43%,
+          91.07% 41.62%,
+          91.07% 93.15%,
+          9.26% 93.15%,
+          9.26% 41.62%
         );
-        &:hover {
-          opacity: 1;
-        }
+        // &:hover {
+        //   opacity: 1;
+        // }
       }
       .overlay {
         position: absolute;
@@ -54,7 +72,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
+    gap: 3vw;
+    margin-right: 3rem;
     .title {
       font-family: var(--gdsc-font-1);
       font-size: 2rem;
@@ -86,6 +105,7 @@
 @media (max-width: 700px) {
   .card {
     .desc {
+      margin-right: 0;
       padding: 1vw 0 0;
     }
   }
@@ -101,16 +121,21 @@
 @media (max-width: 420px) {
   .card {
     desc {
+      margin-right: 0;
       gap: 0;
     }
   }
   .imgContainer {
     margin-inline: 0 !important;
   }
+  .title {
+    font-size: 1.6rem !important;
+  }
 }
 @media (max-width: 380px) {
   .card {
     desc {
+      margin-right: 0;
       gap: 0;
     }
   }
