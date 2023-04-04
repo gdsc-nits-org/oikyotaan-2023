@@ -64,7 +64,7 @@ const coreMembers = [
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613517/Oikyotaan/WhatsApp_Image_2023-04-03_at_7.50.19_AM_-_Suvadip_Sau_i5kut0.jpg",
   },
   {
-    name: "Swarup Das exe",
+    name: "Swarup Das",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613555/Oikyotaan/IMG20221214151045_-_Swarup_Das_j0rhhu.jpg",
   },
