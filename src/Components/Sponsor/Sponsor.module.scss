@@ -61,6 +61,7 @@
       object-fit: cover;
     }
     #right {
+      // display: none;
       position: absolute;
       transform: translate(-50%, -50%);
       top: 50%;
@@ -118,17 +119,17 @@
   opacity: 1;
 }
 #frightD {
+  display: none;
   position: absolute;
   bottom: 0px;
   right: 0px;
   width: 40%;
-  opacity: 0;
 }
 @media (max-width: 700px) {
   .heading {
     gap: 2%;
     h1 {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
     }
     img {
       width: 40%;
@@ -162,7 +163,7 @@
     opacity: 0;
   }
   #frightD {
-    opacity: 1;
+    display: block;
   }
   .sponsorContainer {
     .frame {

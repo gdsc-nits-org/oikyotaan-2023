@@ -38,14 +38,14 @@ const About = ({ aboutRef }) => {
               as we welcome the new year with pomp, joy, music and dance!
               <br />
               <div />
-              <button className={style.btn}>
-                <a
-                  href="https://drive.google.com/file/d/1lSONRyHf--VPMvo9u1aQj4NUDBnAZ-0E/view?usp=sharing"
-                  target="_blank"
-                >
-                  Brochure
-                </a>
-              </button>
+              <a
+                className={style.btn}
+                href="https://drive.google.com/file/d/1lSONRyHf--VPMvo9u1aQj4NUDBnAZ-0E/view?usp=sharing"
+                target="_blank"
+              >
+                Brochure
+              </a>
+              {/* </button> */}
             </div>
           </Fade>
           <div className={style.footer}>

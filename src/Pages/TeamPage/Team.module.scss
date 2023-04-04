@@ -27,7 +27,7 @@
   .role {
     position: absolute;
     z-index: -1;
-    top: 55%;
+    top: 50%;
     font-size: 3.4em;
     color: #482c00;
     font-weight: 400;
@@ -55,7 +55,9 @@
       font-size: 1.2em;
       letter-spacing: 0;
       left: 60%;
-      font-family: "Poppins", sans-serif;
+      p {
+        font-family: "Poppins", sans-serif;
+      }
     }
   }
 }

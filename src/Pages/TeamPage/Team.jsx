@@ -5,16 +5,18 @@ import { useMediaQuery } from "../../Hooks";
 import styles from "./Team.module.scss";
 import { OurTeam } from "../../Components";
 
-const OurTeamPage = () => {
+const OurTeamPage = ({ setLoading }) => {
   const [scroll, setScroll] = useState();
   const [designation, setDesignation] = useState("Developer");
   const [selectedType, setSelectedType] = useState("core");
   const [lottie1, setLottie1] = useState("");
   const isMobile = useMediaQuery("(max-width: 700px)");
   useEffect(() => {
+    setLoading(true);
     fetch("/lotties/blossom-lottie.json")
       .then((data) => data.json())
-      .then((res) => setLottie1(res));
+      .then((res) => setLottie1(res))
+      .finally(() => setLoading(false));
   }, []);
 
   useEffect(() => {

@@ -86,15 +86,16 @@
   background-color: #a76729;
   border: none;
   color: rgb(232, 224, 224);
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer;
   border-radius: 10px;
   margin-top: 25px;
+  padding: 15px 32px;
+  cursor: pointer;
+  z-index: 99;
   a {
     color: #eff2f4;
     text-decoration: none;
@@ -112,12 +113,13 @@
     display: flex;
     flex-wrap: wrap;
     padding-right: 1rem;
+    padding-top: 1rem;
   }
 
   .about_text {
+    font-family: "Poppins", sans-serif;
     font-size: 1rem;
     text-align: center;
-    // margin-left: 10vw;
     margin: 0px auto 0;
   }
   .alpona {
@@ -153,7 +155,7 @@
     margin-left: 0vw;
     gap: 2%;
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
     img {
       width: 40%;
