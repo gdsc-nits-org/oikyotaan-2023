@@ -19,31 +19,41 @@ const OurTeamPage = () => {
 
   useEffect(() => {
     if (selectedType === "web") {
-      if (scroll > 0.54) {
+      if (scroll > 0.9) {
         setDesignation("Deputy UI/UX Head");
-      } else if (scroll > 0.543) {
-        setDesignation("UI/UX Head");
-      } else if (scroll > 0.326) {
+      } else if (scroll > 0.42) {
         setDesignation("Deputy Web Head");
+      } else if (scroll > 0.26) {
+        setDesignation("UI/UX Head");
       } else {
         setDesignation("Web Head");
       }
-    } else if (scroll > 0.797) {
-      setDesignation("Marketing Head");
-    } else if (scroll > 0.607) {
+    } else if (scroll > 0.97) {
+      setDesignation("Content Head and Event Management Head");
+    } else if (scroll > 0.93) {
+      setDesignation("Content Head");
+    } else if (scroll > 0.85) {
+      setDesignation("Decoration Head");
+    } else if (scroll > 0.81) {
+      setDesignation("Logistics Head");
+    } else if (scroll > 0.69) {
       setDesignation("Hospitality Head");
-    } else if (scroll > 0.512) {
+    } else if (scroll > 0.566) {
+      setDesignation("Infra Head");
+    } else if (scroll > 0.52) {
+      setDesignation("Publicity Head");
+    } else if (scroll > 0.45) {
       setDesignation("Executive Head");
-    } else if (scroll > 0.417) {
-      setDesignation("Infra Team Head");
-    } else if (scroll > 0.31) {
-      setDesignation("Publicity Team Head and Event Management Head");
-    } else if (scroll > 0.22) {
-      setDesignation("Executive Head");
-    } else if (scroll > 0.12) {
+    } else if (scroll > 0.41) {
       setDesignation("Event Management Head");
+    } else if (scroll > 0.25) {
+      setDesignation("Marketing Head");
+    } else if (scroll > 0.2) {
+      setDesignation("Treasurer");
+    } else if (scroll > 0.05) {
+      setDesignation("Chief Coordinator");
     } else {
-      setDesignation("Web and Marketing Head");
+      setDesignation("Convenor");
     }
   }, [scroll, selectedType]);
 
