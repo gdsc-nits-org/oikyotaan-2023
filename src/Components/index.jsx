@@ -5,5 +5,14 @@ import Landing from "./Landing/Landing";
 import Sponsor from "./Sponsor/Sponsor";
 import Footer from "./Footer/Footer";
 import VerticalCarousel from "./VerticalCarousel/VerticalCarousel";
-
-export { Button, Navbar, GalleryCard, Landing, Footer, Sponsor, VerticalCarousel };
+import ArtistCard from "./ArtistCard/ArtistCard";
+export {
+  Button,
+  Navbar,
+  GalleryCard,
+  Landing,
+  Footer,
+  Sponsor,
+  VerticalCarousel,
+  ArtistCard,
+};
