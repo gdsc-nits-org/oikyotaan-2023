@@ -70,6 +70,7 @@ const Gallery = () => {
               return (
                 <SwiperSlide key={e.id}>
                   <GalleryCard key={e.id} src={e.src} />
+                  <div className="swiper-lazy-preloader"></div>
                 </SwiperSlide>
               );
             })}
