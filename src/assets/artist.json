@@ -3,12 +3,12 @@
     "id": 1,
     "name": "Iman chakraborty",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, augue mattis condimentum gravida ultrices nunc sagittis, faucibus lacus. Ornare urna nibhpellentesque odio senectus habitasse eu enim sit. Urna enim egestas diam nulla sit......",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/f/f1/ImanChakkoty_%28cropped%29.jpg"
+    "img": "https://res.cloudinary.com/dt3o8ldp9/image/upload/v1680631928/artist3_n93ank.jpg"
   },
   {
     "id": 2,
     "name": "Snigdhajit Bhowmik",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, augue mattis condimentum gravida ultrices nunc sagittis, faucibus lacus. Ornare urna nibhpellentesque odio senectus habitasse eu enim sit. Urna enim egestas diam nulla sit......",
-    "img": "https://pbs.twimg.com/media/DbeRWqlU8AIeIh-.jpg"
+    "img": "https://res.cloudinary.com/dt3o8ldp9/image/upload/v1680631071/artist2_y9doyf.jpg"
   }
 ]
