@@ -32,11 +32,19 @@
   .text {
     margin-top: 5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     z-index: 3;
+    .design {
+      text-align: center;
+      img {
+        max-width: 80%;
+        height: 100%;
+      }
+    }
     p {
+      padding: 0.5vw 2vw;
       font-size: 3.5rem;
       font-weight: 600;
       letter-spacing: 0.05em;
@@ -61,7 +69,6 @@
     gap: 10px;
     .text {
       margin-top: 3rem;
-      display: flex;
       p {
         font-size: 3rem;
       }
@@ -83,7 +90,9 @@
       object-fit: fill;
     }
     .text {
-      display: flex;
+      .design {
+        width: 5rem;
+      }
       p {
         font-size: 3rem;
       }
@@ -110,9 +119,12 @@
       transform: scaleY(-1);
     }
     .text {
+      margin-top: 5rem;
+      .design {
+        width: 4rem;
+      }
       p {
         font-size: 3rem;
-        margin-top: 2.2rem;
       }
     }
     .cardcontainer {
