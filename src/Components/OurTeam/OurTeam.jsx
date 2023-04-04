@@ -123,6 +123,11 @@ const coreMembers = [
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680634632/IMG_20230404_231833_-_Nandini_Ghosh_i2rvdp.jpg",
   },
+  {
+    name: "Arpita Bhattacharjee",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680634617/20230403_155217_-_Arpita_Bhattacharjee_hgihkm.jpg",
+  },
 ];
 
 const webMembers = [
