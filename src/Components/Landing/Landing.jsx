@@ -4,15 +4,18 @@ import Lottie from "react-lottie";
 import { useMediaQuery } from "../../Hooks";
 import style from "./Landing.module.scss";
 
-const Landing = () => {
+const Landing = ({ setLoading }) => {
   const [lottie1, setLottie1] = useState("");
   const [lottie2, setLottie2] = useState("");
   const isMobile = useMediaQuery("(max-width: 700px)");
   useEffect(() => {
+    setLoading(true);
     fetch("/lotties/blossom-lottie.json")
       .then((data) => data.json())
-      .then((res) => setLottie1(res));
-
+      .then((res) => {
+        setLottie1(res);
+        setLoading(false);
+      });
     fetch("/lotties/taxi-lottie.json")
       .then((data) => data.json())
       .then((res) => setLottie2(res));
