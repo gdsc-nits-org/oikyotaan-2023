@@ -24,20 +24,6 @@
         position: relative;
         z-index: 2;
         transition: all 1s ease-in-out;
-        //opacity: 0;
-        // clip-path: polygon(
-        //   9.59% 38.41%,
-        //   12.79% 26.87%,
-        //   20.86% 16.23%,
-        //   34.27% 10.7%,
-        //   49.94% 8.09%,
-        //   65.91% 10.7%,
-        //   80.64% 16.87%,
-        //   87.41% 26.87%,
-        //   91.39% 38.41%,
-        //   91.39% 93.74%,
-        //   9.59% 93.74%
-        // );
         clip-path: polygon(
           9.26% 37.43%,
           12.13% 25.84%,
@@ -55,9 +41,6 @@
           9.26% 93.15%,
           9.26% 41.62%
         );
-        // &:hover {
-        //   opacity: 1;
-        // }
       }
       .overlay {
         position: absolute;
@@ -93,9 +76,6 @@
       height: 54%;
       width: 90%;
     }
-    // .imgContainer {
-    //   width: 90% !important;
-    // }
     .desc {
       padding: 1vw 0 0;
     }

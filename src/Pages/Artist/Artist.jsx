@@ -22,7 +22,7 @@ const Artist = () => {
       </div>
       <div className={styles.sliderContainer}>
         <Swiper
-          direction="vertical"
+          direction="horizontal"
           mousewheel
           pagination={{
             clickable: true,
