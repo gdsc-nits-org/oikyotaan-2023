@@ -1,0 +1,131 @@
+.card {
+  height: 92%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(167, 103, 41, 0.56);
+  color: white;
+  .container {
+    display: flex;
+    justify-content: center;
+    .imgContainer {
+      width: 50%;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 2rem;
+      position: relative;
+      cursor: pointer;
+      .eventImg {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        transition: all 1s ease-in-out;
+        clip-path: polygon(
+          9.26% 37.43%,
+          12.13% 25.84%,
+          19.67% 17.16%,
+          28.52% 12.86%,
+          35.06% 9.68%,
+          48.85% 7.92%,
+          60.9% 9.68%,
+          72.13% 12.86%,
+          84.26% 20.26%,
+          89.73% 28.53%,
+          89.73% 37.43%,
+          91.07% 41.62%,
+          91.07% 93.15%,
+          9.26% 93.15%,
+          9.26% 41.62%
+        );
+      }
+      .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .desc {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-right: 3rem;
+    .title {
+      font-family: var(--gdsc-font-1);
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .content {
+      font-family: var(--gdsc-font-1);
+      text-align: center;
+      font-weight: 200;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    .eventImg {
+      height: 54%;
+      width: 90%;
+    }
+    .desc {
+      padding: 1vw 0 0;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    .desc {
+      margin-right: 0;
+      padding: 1vw 0 0;
+    }
+  }
+  .container {
+    align-items: stretch;
+  }
+  .imgContainer {
+    margin-inline: 0 !important;
+    justify-content: center;
+    width: 50% !important;
+  }
+}
+@media (max-width: 420px) {
+  .card {
+    desc {
+      margin-right: 0;
+      gap: 0;
+    }
+  }
+  .imgContainer {
+    margin-inline: 0 !important;
+  }
+  .title {
+    font-size: 1.6rem !important;
+  }
+}
+@media (max-width: 380px) {
+  .card {
+    desc {
+      margin-right: 0;
+      gap: 0;
+    }
+  }
+  .imgContainer {
+    margin-inline: 0 !important;
+  }
+  .title {
+    font-size: 1.5rem !important;
+  }
+  .content {
+    font-size: 1rem !important;
+  }
+}

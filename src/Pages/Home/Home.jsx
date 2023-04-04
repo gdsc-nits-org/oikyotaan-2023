@@ -1,12 +1,14 @@
-import { Button } from "../../Components";
-
+import { useRef } from "react";
 import style from "./Home.module.scss";
-
+import { Landing, Sponsor } from "../../Components";
+import About from "../../Components/About/About";
 const Home = () => {
+  const aboutRef = useRef(null);
   return (
     <main className={style.home}>
-      <h1>Home Page</h1>
-      <Button type="button" />
+      <Landing aboutRef={aboutRef} />
+      <About aboutRef={aboutRef} />
+      <Sponsor />
     </main>
   );
 };

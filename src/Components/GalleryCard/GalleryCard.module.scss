@@ -1,0 +1,58 @@
+.container {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 2rem;
+  filter: blur(5px);
+  img {
+    border-radius: 2rem;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.active {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 2rem;
+  filter: none;
+}
+@media only screen and (max-width: 555px) {
+  .container {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    margin-inline: 6rem;
+    img {
+      border-radius: 1rem;
+    }
+  }
+  .active {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .container {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    margin-inline: 2.5rem;
+  }
+  .active {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .container {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    margin-inline: 20%;
+  }
+  .active {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+  }
+}

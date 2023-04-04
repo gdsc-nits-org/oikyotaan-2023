@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 
-import { Navbar } from "./Components";
+import { Navbar, Footer } from "./Components";
 
-import { Error, Home } from "./Pages";
+import { Error, Home, Gallery, Events, Artist, TeamPage } from "./Pages";
 
 const App = () => {
   return (
@@ -10,8 +10,13 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/artists" element={<Artist />} />
+        <Route path="/team" element={<TeamPage />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </>
   );
 };

@@ -1,0 +1,167 @@
+.container {
+  height: 100svh;
+  background: url("/Gallery/bgtexture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  .lottie1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .lottie2 {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.bimg {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.bimgLeft {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-width: 100%;
+}
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 4rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 2%;
+  .design {
+    img {
+      max-width: 80%;
+      height: 100%;
+    }
+  }
+  .tt {
+    font-family: "Italiana", serif;
+    font-size: 3.5rem;
+    line-height: 94px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.05em;
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 200%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.25);
+  }
+}
+.sliderContainer {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  transition: all 1s ease-in-out;
+  margin-bottom: 3rem;
+}
+.swiperLeftArrow {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  z-index: 10;
+  cursor: pointer;
+  animation: blink 2s infinite ease-in-out;
+  img {
+    width: 80%;
+  }
+}
+.swiperRightArrow {
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  z-index: 10;
+  transform: scaleX(-1);
+  animation: blink 2s infinite ease-in-out;
+  cursor: pointer;
+  img {
+    width: 80%;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .swiperLeftArrow,
+  .swiperRightArrow {
+    display: none;
+  }
+  .bimg {
+    object-fit: cover;
+  }
+  .lottie2 {
+    display: none;
+  }
+  .bimgLeft {
+    display: block;
+    max-width: 50%;
+    object-fit: cover;
+    object-position: bottom;
+    transform: scaleY(-1);
+  }
+  .text {
+    gap: 0.5rem;
+    .design {
+      width: 5.5rem;
+    }
+    .tt {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 789px) {
+  .text {
+    gap: 0.5rem;
+    .tt {
+      font-size: 3rem;
+    }
+  }
+}
+
+//landscape mode
+@media (max-height: 570px) {
+  .container {
+    height: 130vh;
+  }
+}
+
+@media (max-height: 500px) {
+  .container {
+    height: 150vh;
+  }
+}
+
+@media (max-height: 430px) {
+  .container {
+    height: 175vh;
+  }
+}
+//iphone SE
+@media (max-height: 390px) {
+  .container {
+    height: 197vh;
+  }
+}

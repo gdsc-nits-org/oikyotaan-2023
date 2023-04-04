@@ -1,0 +1,181 @@
+.main {
+  background: url("/assets/Background_sponsor.png");
+  background-size: cover;
+  padding-top: 5%;
+  color: white;
+  position: relative;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  h1 {
+    font-size: 4rem;
+  }
+  img {
+    width: 40%;
+  }
+}
+
+.sponsorContainer {
+  background: url("/assets/monument.svg");
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  padding: 15%;
+  .frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    #top {
+      position: absolute;
+      transform: translate(-50%, 50%);
+      top: 8%;
+      left: 50%;
+      width: 80vw;
+      height: auto;
+      object-fit: contain;
+    }
+    #bottom {
+      position: absolute;
+      transform: translate(-50%, -100%);
+      left: 50%;
+      top: 90%;
+      width: 80vw;
+      height: auto;
+      object-fit: contain;
+    }
+    #left {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 15%;
+      height: 90%;
+      width: 5%;
+      object-fit: cover;
+    }
+    #right {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 85%;
+      height: 90%;
+      width: 5%;
+      object-fit: cover;
+    }
+  }
+
+  .sponsorList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    .card {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 2%;
+      img {
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 1rem;
+      }
+      p {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+  .media {
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem;
+  }
+}
+#fleft {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 35%;
+}
+#fright {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40%;
+  opacity: 1;
+}
+#frightD {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 40%;
+  opacity: 0;
+}
+@media (max-width: 700px) {
+  .heading {
+    gap: 2%;
+    h1 {
+      font-size: 1.5rem;
+    }
+    img {
+      width: 40%;
+    }
+  }
+  .sponsorContainer {
+    .media {
+      font-size: 1.2rem;
+    }
+    .sponsorList {
+      .card {
+        gap: 2%;
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sponsorContainer {
+    .sponsorList {
+      gap: 10%;
+      .card {
+        width: 35%;
+      }
+    }
+  }
+  #fright {
+    opacity: 0;
+  }
+  #frightD {
+    opacity: 1;
+  }
+  .sponsorContainer {
+    .frame {
+      #top {
+        top: 5%;
+      }
+      #bottom {
+        top: 93%;
+      }
+      #left,
+      #right {
+        height: 95%;
+      }
+    }
+  }
+}
