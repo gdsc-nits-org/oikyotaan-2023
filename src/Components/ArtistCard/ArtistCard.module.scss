@@ -6,54 +6,46 @@
   border-radius: 0.5rem;
   background-color: rgba(167, 103, 41, 0.56);
   color: white;
-  .imgContainer {
-    width: 75%;
-    margin-inline: auto;
+  .container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    .eventImg {
-      width: 100%;
-      height: 100%;
+    .imgContainer {
+      width: 50%;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 2rem;
       position: relative;
-      z-index: 2;
-      transition: all 1s ease-in-out;
-      opacity: 0;
-      // clip-path: polygon(
-      //   8.93% 38.02%,
-      //   12.14% 26.48%,
-      //   22.22% 16.48%,
-      //   33.31% 10.31%,
-      //   49.84% 7.49%,
-      //   66.37% 11.68%,
-      //   78.87% 18.68%,
-      //   86.75% 26.48%,
-      //   90.74% 38.02%,
-      //   90.74% 93.34%,
-      //   8.93% 93.34%
-      // );
-      clip-path: polygon(
-        9.59% 38.41%,
-        12.79% 26.87%,
-        20.86% 16.23%,
-        34.27% 10.7%,
-        49.94% 8.09%,
-        65.91% 10.7%,
-        80.64% 16.87%,
-        87.41% 26.87%,
-        91.39% 38.41%,
-        91.39% 93.74%,
-        9.59% 93.74%
-      );
-      &:hover {
-        opacity: 1;
+      .eventImg {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        transition: all 1s ease-in-out;
+        opacity: 0;
+        clip-path: polygon(
+          9.59% 38.41%,
+          12.79% 26.87%,
+          20.86% 16.23%,
+          34.27% 10.7%,
+          49.94% 8.09%,
+          65.91% 10.7%,
+          80.64% 16.87%,
+          87.41% 26.87%,
+          91.39% 38.41%,
+          91.39% 93.74%,
+          9.59% 93.74%
+        );
+        &:hover {
+          opacity: 1;
+        }
       }
-    }
-    .overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
+      .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   .desc {
@@ -72,7 +64,6 @@
       font-family: var(--gdsc-font-1);
       text-align: center;
       font-weight: 200;
-      //line-height: 30px;
     }
   }
 }
@@ -83,6 +74,9 @@
       height: 54%;
       width: 90%;
     }
+    // .imgContainer {
+    //   width: 90% !important;
+    // }
     .desc {
       padding: 1vw 0 0;
     }
@@ -95,7 +89,12 @@
       padding: 1vw 0 0;
     }
   }
+  .container {
+    align-items: stretch;
+  }
   .imgContainer {
+    margin-inline: 0 !important;
+    justify-content: center;
     width: 50% !important;
   }
 }
@@ -105,12 +104,18 @@
       gap: 0;
     }
   }
+  .imgContainer {
+    margin-inline: 0 !important;
+  }
 }
 @media (max-width: 380px) {
   .card {
     desc {
       gap: 0;
     }
+  }
+  .imgContainer {
+    margin-inline: 0 !important;
   }
   .title {
     font-size: 1.5rem !important;
