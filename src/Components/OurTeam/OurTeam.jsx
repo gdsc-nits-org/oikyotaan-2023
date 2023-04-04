@@ -51,7 +51,7 @@ const coreMembers = [
   {
     name: "Sayantan Das",
     photoUrl:
-      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613577/Oikyotaan/IMG-20230322-WA0038_-_Arkadeep_Kashyap_pisyoc.jpg",
+      "https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680641468/WhatsApp_Image_2023-04-05_at_2.13.16_AM_asd9mc.jpg",
   },
   {
     name: "Ankita Baidya",
@@ -160,6 +160,11 @@ const webMembers = [
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680637117/WhatsApp_Image_2023-04-04_at_11.35.10_PM_-_Diya_Karmakar_n0se4f.jpg",
   },
   {
+    name: "Tithi Jha",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680630448/2019-10-13_13.19.45_-_Tithi_Jha_ehodh6.png",
+  },
+  {
     name: "Bijay Jiwrajka",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680630092/WhatsApp_Image_2023-04-04_at_9.17.53_PM_-_Bijay_Jiwrajka_dxhxro.jpg",
@@ -191,11 +196,6 @@ const webMembers = [
     name: "Dimpal Kalita ",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680630089/Screenshot_2023-03-22-01-06-43-57_6012fa4d4ddec268fc5c7112cbb265e7_-_Dimpal_Kalita_yiyqua.jpg",
-  },
-  {
-    name: "Tithi Jha",
-    photoUrl:
-      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680630448/2019-10-13_13.19.45_-_Tithi_Jha_ehodh6.png",
   },
 ];
 const OurTeam = ({ setchange, type }) => {
