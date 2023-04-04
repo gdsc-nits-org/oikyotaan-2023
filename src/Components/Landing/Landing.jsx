@@ -4,7 +4,7 @@ import Lottie from "react-lottie";
 import { useMediaQuery } from "../../Hooks";
 import style from "./Landing.module.scss";
 
-const Landing = () => {
+const Landing = ({ aboutRef }) => {
   const [lottie1, setLottie1] = useState("");
   const [lottie2, setLottie2] = useState("");
   const isMobile = useMediaQuery("(max-width: 700px)");
@@ -34,6 +34,9 @@ const Landing = () => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+  const handleClick = () => {
+    aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <div className={style.container}>
       <div className={style.main}>
@@ -55,7 +58,7 @@ const Landing = () => {
       </div>
       <img className={style.logo} src="/images/oikyotan.svg" alt="logo" width={300} />
       <div className={style.down}>
-        <button>
+        <button onClick={handleClick}>
           About Us
           <Icon
             icon="material-symbols:keyboard-arrow-down-rounded"

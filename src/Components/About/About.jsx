@@ -1,8 +1,8 @@
 import style from "./About.module.scss";
 import Fade from "../Fade/Fade";
-const About = () => {
+const About = ({ aboutRef }) => {
   return (
-    <div className={style.aboutUs}>
+    <div className={style.aboutUs} ref={aboutRef}>
       <img src="/images/alpona.png" alt="alpona" className={style.alpona} />
       <div className={style.head}>
         <h1>About Us</h1>

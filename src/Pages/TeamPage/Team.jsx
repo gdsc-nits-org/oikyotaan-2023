@@ -19,17 +19,17 @@ const OurTeamPage = () => {
 
   useEffect(() => {
     if (selectedType === "web") {
-      if (scroll > 0.9) {
+      if (scroll > 0.52) {
+        setDesignation("Deputy WEB Head");
+      } else if (scroll > 0.43) {
         setDesignation("Deputy UI/UX Head");
-      } else if (scroll > 0.42) {
-        setDesignation("Deputy Web Head");
       } else if (scroll > 0.26) {
         setDesignation("UI/UX Head");
       } else {
         setDesignation("Web Head");
       }
     } else if (scroll > 0.97) {
-      setDesignation("Content Head and Event Management Head");
+      setDesignation("Content & Event Management Head");
     } else if (scroll > 0.93) {
       setDesignation("Content Head");
     } else if (scroll > 0.85) {
@@ -46,8 +46,10 @@ const OurTeamPage = () => {
       setDesignation("Executive Head");
     } else if (scroll > 0.41) {
       setDesignation("Event Management Head");
-    } else if (scroll > 0.25) {
+    } else if (scroll > 0.285) {
       setDesignation("Marketing Head");
+    } else if (scroll > 0.24) {
+      setDesignation("Marketing & WEB Head");
     } else if (scroll > 0.2) {
       setDesignation("Treasurer");
     } else if (scroll > 0.05) {
@@ -75,7 +77,6 @@ const OurTeamPage = () => {
         );
       }}
     >
-      {/* <img className={styles.bimg} src="/Gallery/bg.png" alt="background" /> */}
       <div className={styles.lottie1}>
         <Lottie
           options={defaultOptions1}
@@ -90,7 +91,6 @@ const OurTeamPage = () => {
           width={isMobile ? 350 : 400}
         />
       </div>
-      {/* <img className={styles.bimgLeft} alt="flower" src="/Gallery/flowers.png" /> */}
 
       <div className={styles.role}>
         <p>{designation}</p>
