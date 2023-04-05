@@ -54,6 +54,21 @@ const coreMembers = [
       "https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680641468/WhatsApp_Image_2023-04-05_at_2.13.16_AM_asd9mc.jpg",
   },
   {
+    name: "Moumita Choudhury",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680684845/WhatsApp_Image_2023-04-05_at_12.36.24_PM_d5iyk4.jpg",
+  },
+  {
+    name: "Cultural 2",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613582/Oikyotaan/IMG_20230320_043036_621_-_Satyik_pritam_Yogi_pxripr.jpg",
+  },
+  {
+    name: "Cultural 3",
+    photoUrl:
+      "https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680641468/WhatsApp_Image_2023-04-05_at_2.13.16_AM_asd9mc.jpg",
+  },
+  {
     name: "Ankita Baidya",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613013/Oikyotaan/IMG_20230402_185125_-_Ankita_Baidya_o7xln9.jpg",
@@ -94,6 +109,11 @@ const coreMembers = [
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613566/Oikyotaan/IMG_20220417_083447_917_-_Reetika_Saha_okntjn.jpg",
   },
   {
+    name: "Anupama Deb",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680684734/IMG-20230405-WA0003_-_Anupama_Deb_cfscuv.jpg",
+  },
+  {
     name: "Afsana Yasmin",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680634621/IMG_20230119_140948_-_Afsana_Yasmin_kihqv2.jpg",
@@ -107,6 +127,11 @@ const coreMembers = [
     name: "Sidhant Ghosh",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680634625/IMG_20220217_104126_-_Sidhant_Ghosh_fozpaq.jpg",
+  },
+  {
+    name: "Utsav Chowdhury",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680684671/IMG_20230405_115622_-_Utsav_Chowdhury_qv5mzl.jpg",
   },
   {
     name: "Tanuja Dutta",

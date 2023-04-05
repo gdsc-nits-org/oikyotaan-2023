@@ -32,29 +32,31 @@ const OurTeamPage = ({ setLoading }) => {
       }
     } else if (scroll > 0.97) {
       setDesignation("Content & Event Management Head");
-    } else if (scroll > 0.93) {
+    } else if (scroll > 0.94) {
       setDesignation("Content Head");
-    } else if (scroll > 0.85) {
+    } else if (scroll > 0.875) {
       setDesignation("Decoration Head");
     } else if (scroll > 0.81) {
       setDesignation("Logistics Head");
-    } else if (scroll > 0.69) {
+    } else if (scroll > 0.675) {
       setDesignation("Hospitality Head");
-    } else if (scroll > 0.566) {
+    } else if (scroll > 0.57) {
       setDesignation("Infra Head");
-    } else if (scroll > 0.52) {
-      setDesignation("Publicity Head");
-    } else if (scroll > 0.45) {
+    } else if (scroll > 0.54) {
+      setDesignation("Publicity and Event Management Head");
+    } else if (scroll > 0.47) {
       setDesignation("Executive Head");
-    } else if (scroll > 0.41) {
+    } else if (scroll > 0.44) {
       setDesignation("Event Management Head");
-    } else if (scroll > 0.285) {
+    } else if (scroll > 0.34) {
+      setDesignation("Cultural Head");
+    } else if (scroll > 0.244) {
       setDesignation("Marketing Head");
-    } else if (scroll > 0.24) {
+    } else if (scroll > 0.21) {
       setDesignation("Marketing & WEB Head");
-    } else if (scroll > 0.2) {
+    } else if (scroll > 0.174) {
       setDesignation("Treasurer");
-    } else if (scroll > 0.05) {
+    } else if (scroll > 0.041) {
       setDesignation("Chief Coordinator");
     } else {
       setDesignation("Convenor");
