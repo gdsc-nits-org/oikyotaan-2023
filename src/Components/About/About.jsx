@@ -3,15 +3,15 @@ import Fade from "../Fade/Fade";
 const About = () => {
   return (
     <div className={style.aboutUs}>
-      <img src="/assets/alpona.png" alt="alpona" className={style.alpona} />
+      <img src="/images/alpona.png" alt="alpona" className={style.alpona} />
       <div className={style.head}>
-        <h3 className={style.about_heading}>About Us</h3>
-        <img src="/assets/line1.png" alt="image1" className={style.about_imag} />
+        <h1>About Us</h1>
+        <img src="/images/line1.png" alt="image1" />
       </div>
       <div className={style.about}>
         <Fade type="left">
           <div className={style.fade}>
-            <img src="/assets/durgamaa.png" alt="image1" className={style.about_image} />
+            <img src="/images/Group 467.png" alt="image1" className={style.about_image} />
           </div>
         </Fade>
         <div className={style.about_text_div}>
@@ -44,15 +44,13 @@ const About = () => {
             </div>
           </Fade>
           <div className={style.footer}>
-            <img src="/assets/Line2.png" alt="image1" className={style.line1} />
-            <img src="/assets/Polygon1.png" alt="image1" className={style.line2} />
-            <img src="/assets/Line2.png" alt="image1" className={style.line1} />
+            <img src="/images/Line2.png" alt="image1" className={style.line1} />
+            <img src="/images/Polygon1.png" alt="image1" className={style.line2} />
+            <img src="/images/Line2.png" alt="image1" className={style.line1} />
           </div>
         </div>
       </div>
-      {/* <div className="background">
-       <img src="/assets/Orange.png" alt="orange" className={style.orange}/>
-      </div> */}
+      <img src="/images/Asset 154 2.png" alt="image1" className={style.line9} />
     </div>
   );
 };

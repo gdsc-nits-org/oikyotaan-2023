@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import { Navbar, Footer } from "./Components";
 
 import { Error, Home, Gallery, Events } from "./Pages";
-
 const App = () => {
   return (
     <>
