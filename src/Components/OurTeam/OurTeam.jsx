@@ -39,6 +39,11 @@ const coreMembers = [
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613577/Oikyotaan/IMG-20230322-WA0038_-_Arkadeep_Kashyap_pisyoc.webp",
   },
   {
+    name: "Azad Ali",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680688499/WhatsApp_Image_2023-04-05_at_3.23.11_PM_qoc0zl.jpg",
+  },
+  {
     name: "Reeya Hazarika",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613587/Oikyotaan/FB3205B0-965B-4DE0-A58F-57E7E4A90D37_-_Reeya_Hazarika_pz5prj.webp",
@@ -53,6 +58,21 @@ const coreMembers = [
     photoUrl:
       "https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680641468/WhatsApp_Image_2023-04-05_at_2.13.16_AM_asd9mc.webp",
   },
+  {
+    name: "Moumita Choudhury",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680684845/WhatsApp_Image_2023-04-05_at_12.36.24_PM_d5iyk4.jpg",
+  },
+  // {
+  //   name: "Cultural 2",
+  //   photoUrl:
+  //     "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613582/Oikyotaan/IMG_20230320_043036_621_-_Satyik_pritam_Yogi_pxripr.jpg",
+  // },
+  // {
+  //   name: "Cultural 3",
+  //   photoUrl:
+  //     "https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680641468/WhatsApp_Image_2023-04-05_at_2.13.16_AM_asd9mc.jpg",
+  // },
   {
     name: "Ankita Baidya",
     photoUrl:
@@ -94,6 +114,11 @@ const coreMembers = [
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613566/Oikyotaan/IMG_20220417_083447_917_-_Reetika_Saha_okntjn.webp",
   },
   {
+    name: "Anupama Deb",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680684734/IMG-20230405-WA0003_-_Anupama_Deb_cfscuv.jpg",
+  },
+  {
     name: "Afsana Yasmin",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680634621/IMG_20230119_140948_-_Afsana_Yasmin_kihqv2.webp",
@@ -109,6 +134,11 @@ const coreMembers = [
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680634625/IMG_20220217_104126_-_Sidhant_Ghosh_fozpaq.webp",
   },
   {
+    name: "Utsav Chowdhury",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680684671/IMG_20230405_115622_-_Utsav_Chowdhury_qv5mzl.jpg",
+  },
+  {
     name: "Tanuja Dutta",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680634650/IMG-20230404-WA0010_-_Nikita_Mandal_u88dhn.webp",
@@ -117,6 +147,11 @@ const coreMembers = [
     name: "Nikita Mandal",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680634659/IMG-20230405-WA0000_-_Tanuja_Dutta_pavjbh.webp",
+  },
+  {
+    name: "Madhura Chatterjee",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680688517/WhatsApp_Image_2023-04-05_at_3.23.12_PM_x6uqux.jpg",
   },
   {
     name: "Nandini Ghosh",
