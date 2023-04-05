@@ -39,6 +39,11 @@ const coreMembers = [
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613577/Oikyotaan/IMG-20230322-WA0038_-_Arkadeep_Kashyap_pisyoc.jpg",
   },
   {
+    name: "Azad Ali",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680687901/WhatsApp_Image_2023-04-05_at_2.56.27_PM_igt8b1.jpg",
+  },
+  {
     name: "Reeya Hazarika",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613587/Oikyotaan/FB3205B0-965B-4DE0-A58F-57E7E4A90D37_-_Reeya_Hazarika_pz5prj.jpg",
@@ -58,16 +63,16 @@ const coreMembers = [
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680684845/WhatsApp_Image_2023-04-05_at_12.36.24_PM_d5iyk4.jpg",
   },
-  {
-    name: "Cultural 2",
-    photoUrl:
-      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613582/Oikyotaan/IMG_20230320_043036_621_-_Satyik_pritam_Yogi_pxripr.jpg",
-  },
-  {
-    name: "Cultural 3",
-    photoUrl:
-      "https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680641468/WhatsApp_Image_2023-04-05_at_2.13.16_AM_asd9mc.jpg",
-  },
+  // {
+  //   name: "Cultural 2",
+  //   photoUrl:
+  //     "https://res.cloudinary.com/dnitrnzho/image/upload/v1680613582/Oikyotaan/IMG_20230320_043036_621_-_Satyik_pritam_Yogi_pxripr.jpg",
+  // },
+  // {
+  //   name: "Cultural 3",
+  //   photoUrl:
+  //     "https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680641468/WhatsApp_Image_2023-04-05_at_2.13.16_AM_asd9mc.jpg",
+  // },
   {
     name: "Ankita Baidya",
     photoUrl:

@@ -30,31 +30,33 @@ const OurTeamPage = ({ setLoading }) => {
       } else {
         setDesignation("Web Head");
       }
-    } else if (scroll > 0.97) {
+    } else if (scroll > 0.98) {
       setDesignation("Content & Event Management Head");
-    } else if (scroll > 0.94) {
+    } else if (scroll > 0.938) {
       setDesignation("Content Head");
-    } else if (scroll > 0.875) {
+    } else if (scroll > 0.871) {
       setDesignation("Decoration Head");
-    } else if (scroll > 0.81) {
+    } else if (scroll > 0.8) {
       setDesignation("Logistics Head");
-    } else if (scroll > 0.675) {
+    } else if (scroll > 0.662) {
       setDesignation("Hospitality Head");
-    } else if (scroll > 0.57) {
+    } else if (scroll > 0.56) {
       setDesignation("Infra Head");
-    } else if (scroll > 0.54) {
+    } else if (scroll > 0.528) {
       setDesignation("Publicity and Event Management Head");
-    } else if (scroll > 0.47) {
+    } else if (scroll > 0.458) {
       setDesignation("Executive Head");
-    } else if (scroll > 0.44) {
+    } else if (scroll > 0.424) {
       setDesignation("Event Management Head");
-    } else if (scroll > 0.34) {
+    } else if (scroll > 0.38) {
       setDesignation("Cultural Head");
-    } else if (scroll > 0.244) {
+    } else if (scroll > 0.278) {
       setDesignation("Marketing Head");
-    } else if (scroll > 0.21) {
+    } else if (scroll > 0.245) {
+      setDesignation("WEB Head");
+    } else if (scroll > 0.215) {
       setDesignation("Marketing & WEB Head");
-    } else if (scroll > 0.174) {
+    } else if (scroll > 0.18) {
       setDesignation("Treasurer");
     } else if (scroll > 0.041) {
       setDesignation("Chief Coordinator");
