@@ -32,7 +32,11 @@ const Gallery = ({ setLoading }) => {
   };
   return (
     <div className={styles.container}>
-      <img className={styles.bimg} src="/Gallery/bg.png" alt="background" />
+      <img
+        className={styles.bimg}
+        src="https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680701027/bg_qlfbia.webp"
+        alt="background"
+      />
       <div className={styles.lottie1}>
         <Lottie
           options={defaultOptions1}
@@ -47,14 +51,24 @@ const Gallery = ({ setLoading }) => {
           width={isMobile ? 250 : 400}
         />
       </div>
-      <img className={styles.bimgLeft} alt="flower" src="/Gallery/flowers.png" />
+      <img
+        className={styles.bimgLeft}
+        alt="flower"
+        src="https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680701128/flowers_xrd5zy.webp"
+      />
       <div className={styles.text}>
         <div className={styles.design}>
-          <img src="/Gallery/design.png" alt="design" />
+          <img
+            src="https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680701238/design_ldyd8q.webp"
+            alt="design"
+          />
         </div>
         <p className={styles.tt}>Gallery</p>
         <div className={styles.design}>
-          <img src="/Gallery/design.png" alt="design" />
+          <img
+            src="https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680701238/design_ldyd8q.webp"
+            alt="design"
+          />
         </div>
       </div>
       <div className={styles.sliderContainer}>

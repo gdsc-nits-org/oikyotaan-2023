@@ -43,7 +43,11 @@ const Landing = ({ aboutRef, setLoading }) => {
       <div className={style.main}>
         <img
           className={style.bgImg}
-          src={`images/${isMobile ? "mobileView" : "landing-img"}.png`}
+          src={
+            isMobile
+              ? "https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680700152/mobileView-1_ff055z.webp"
+              : "https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680700046/landing-img_jckyen.webp"
+          }
           alt="kolkata-img"
         />
         <div className={style.lottie1}>
