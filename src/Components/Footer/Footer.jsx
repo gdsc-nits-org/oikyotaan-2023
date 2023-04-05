@@ -9,7 +9,10 @@ const Footer = () => {
       <div className={style.Footer}>
         <div className={style.footerupper}>
           <div className={style.footerupperleft}>
-            <img src="/assets/logo_txt.png" alt="gdsc_logo" />
+            <img
+              src="https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680700845/logo_txt_n1cn1i.webp"
+              alt="gdsc_logo"
+            />
           </div>
           <div className={style.footeruppermiddle}>
             <img src="/images/oikyotan.svg" alt="oikyotaan_logo" />

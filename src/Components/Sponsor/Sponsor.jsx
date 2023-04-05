@@ -5,18 +5,47 @@ const Sponsor = () => {
 
   return (
     <div className={styles.main}>
-      <img id={styles.fleft} src="assets/Flowerleft.svg" alt="" />
-      <img id={styles.fright} src="assets/Flowerright.svg" alt="" />
+      <img
+        className={styles.bimg}
+        src="https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680701027/bg_qlfbia.webp"
+        alt="background"
+      />
+      <img
+        id={styles.fleft}
+        src="https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680706481/Asset_3eeu2q_2_k0eub0.webp"
+        alt=""
+      />
+      <img
+        id={styles.fright}
+        src="https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680705467/Asset_3eeu2q_3_yofvwh.webp"
+        alt=""
+      />
       <div className={styles.heading}>
         <h1>Sponsors</h1>
         <img src="assets/underline.svg" alt="underline" />
       </div>
       <div className={styles.sponsorContainer}>
         <div className={styles.frame}>
-          <img id={styles.top} src="assets/Top.svg" alt="top frame" />
-          <img id={styles.left} src="assets/Left.svg" alt="left frame" />
-          <img id={styles.bottom} src="assets/Bottom.svg" alt="bottom frame" />
-          <img id={styles.right} src="assets/Right.svg" alt="right frame" />
+          <img
+            id={styles.top}
+            src="https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680705879/Asset_2qqi_9_ayebkg.webp"
+            alt="top frame"
+          />
+          <img
+            id={styles.left}
+            src="https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680706061/Asset_2qqi_6_pcmfmq.webp"
+            alt="left frame"
+          />
+          <img
+            id={styles.bottom}
+            src="https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680705879/Asset_2qqi_9_ayebkg.webp"
+            alt="bottom frame"
+          />
+          <img
+            id={styles.right}
+            src="https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680705990/Asset_2qqi_7_w66nam.webp"
+            alt="right frame"
+          />
         </div>
 
         <div className={styles.sponsorList}>
@@ -42,7 +71,11 @@ const Sponsor = () => {
           })}
         </div> */}
       </div>
-      <img id={styles.frightD} src="assets/Flowerright_down.svg" alt="" />
+      <img
+        id={styles.frightD}
+        src="https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680706175/Asset_3eeu2q_3_1_gstrrj.webp"
+        alt=""
+      />
     </div>
   );
 };

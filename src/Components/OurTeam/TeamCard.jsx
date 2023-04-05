@@ -7,7 +7,11 @@ const TeamCard = ({ name, title, photoUrl }) => {
       <img className={styles["team-photo"]} src={photoUrl} alt={name} />
       <h3 className={styles["team-name"]}>{name}</h3>
       <p className={styles["team-title"]}>{title}</p>
-      <img className={styles["team-bottom"]} src="/assets/teamlower.png" alt="" />
+      <img
+        className={styles["team-bottom"]}
+        src="https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680706770/teamlower_irp7ef.png"
+        alt="team-lower"
+      />
     </div>
   );
 };
