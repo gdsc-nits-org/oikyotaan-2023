@@ -31,11 +31,19 @@ const Footer = () => {
             </div>
           </div>
           <div className={style.footermiddleright}>
-            <a className={style.facebook} href="http">
+            <a
+              className={style.facebook}
+              href="https://www.facebook.com/nitsilcharoikyotaan"
+              target="_blank"
+            >
               <FiFacebook className={style.facebooklogo} />
               <p> Facebook </p>
             </a>
-            <a className={style.instagram} href="http">
+            <a
+              className={style.instagram}
+              href="https://www.instagram.com/_oikyotaan_/"
+              target="_blank"
+            >
               <FiInstagram className={style.instagramlogo} />
               <p> Instagram </p>
             </a>
