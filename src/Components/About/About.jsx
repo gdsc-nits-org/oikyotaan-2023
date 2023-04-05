@@ -41,8 +41,20 @@ const About = () => {
               placeat, corrupti explicabo velit nam ut tenetur fugit, ducimus libero vero
               enim voluptatum! Hic culpa animi voluptatum consequatur facilis ad
               reprehenderit placeat consectetur velit nostrum, provident rem vel.
+              <br />
+              <button className={style.btn}>
+                <a
+                  href="https://drive.google.com/file/d/1lSONRyHf--VPMvo9u1aQj4NUDBnAZ-0E/view?usp=sharing"
+                  target="_blank"
+                >
+                  Brochure
+                </a>
+              </button>
             </div>
           </Fade>
+          {/* <button className={style.btn}>
+        <a href="https://drive.google.com/file/d/1lSONRyHf--VPMvo9u1aQj4NUDBnAZ-0E/view?usp=sharing" target="_blank">Brochure</a>
+      </button> */}
           <div className={style.footer}>
             <img src="/images/Line2.png" alt="image1" className={style.line1} />
             <img src="/images/Polygon1.png" alt="image1" className={style.line2} />
