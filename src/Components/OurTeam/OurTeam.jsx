@@ -182,6 +182,11 @@ const webMembers = [
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680630449/310880262_394976272845602_721811381935518621_n_-_Jyotishka_Bhattacharjee_czfm91.jpg",
   },
+  {
+    name: "Debalina Borah",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680710032/WhatsApp_Image_2023-04-05_at_9.05.59_PM_pirka7.jpg",
+  },
 
   {
     name: "Shibam Debnath",
