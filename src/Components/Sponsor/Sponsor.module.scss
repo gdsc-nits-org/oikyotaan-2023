@@ -1,9 +1,15 @@
 .main {
-  background: url("/assets/Background_sponsor.png");
+  background: url("https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680705659/Background_sponsor_e4lhlv.webp");
   background-size: cover;
   padding-top: 5%;
   color: white;
   position: relative;
+  overflow: hidden;
+  .bimg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
 }
 .heading {
   display: flex;
@@ -16,13 +22,12 @@
     font-size: 4rem;
   }
   img {
+    z-index: 10;
     width: 40%;
   }
 }
 
 .sponsorContainer {
-  background: url("/assets/monument.svg");
-  background-size: cover;
   width: 100%;
   position: relative;
   padding: 15%;
