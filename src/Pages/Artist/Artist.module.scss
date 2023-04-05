@@ -1,18 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+
 .container {
-  height: 100svh;
+  height: 100vh;
   background: url("/Gallery/bgtexture.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  .lottie1 {
+  .sliderContainer {
     position: absolute;
-    top: 0;
+    height: 65%;
+    width: 75%;
+    top: 35%;
+    transition: all 1s ease-in-out;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
     left: 0;
-  }
-  .lottie2 {
-    transform: rotateY(180deg);
-    position: absolute;
-    top: 0;
     right: 0;
   }
 }
@@ -22,10 +25,17 @@
   z-index: 1;
 }
 .bimgLeft {
-  display: none;
   position: absolute;
   top: 0;
   right: 0;
+  height: 100%;
+  max-width: 100%;
+}
+.bimgRight {
+  position: absolute;
+  transform: scaleX(-1);
+  top: 0;
+  left: 0;
   height: 100%;
   max-width: 100%;
 }
@@ -41,7 +51,7 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 2%;
+  top: 5%;
   .design {
     img {
       max-width: 80%;
@@ -62,79 +72,52 @@
     text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.25);
   }
 }
-.sliderContainer {
-  position: absolute;
-  width: 100%;
-  top: 35%;
-  transition: all 1s ease-in-out;
-  margin-bottom: 3rem;
-}
-.swiperLeftArrow {
-  position: absolute;
-  top: 40%;
-  left: 2%;
-  z-index: 10;
-  cursor: pointer;
-  animation: blink 2s infinite ease-in-out;
-  img {
-    width: 80%;
-  }
-}
-.swiperRightArrow {
-  position: absolute;
-  top: 40%;
-  right: 2%;
-  z-index: 10;
-  transform: scaleX(-1);
-  animation: blink 2s infinite ease-in-out;
-  cursor: pointer;
-  img {
-    width: 80%;
-  }
-}
-@keyframes blink {
-  0% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.5;
-  }
-}
 @media only screen and (max-width: 500px) {
-  .swiperLeftArrow,
-  .swiperRightArrow {
-    display: none;
-  }
   .bimg {
     object-fit: cover;
   }
-  .lottie2 {
-    display: none;
-  }
-  .bimgLeft {
-    display: block;
+  .bimgLeft,
+  .bimgRight {
     max-width: 50%;
     object-fit: cover;
     object-position: bottom;
+  }
+  .bimgLeft {
     transform: scaleY(-1);
   }
   .text {
     gap: 0.5rem;
     .design {
-      width: 5.5rem;
+      width: 4rem;
     }
     .tt {
       font-size: 3rem;
     }
   }
+  .sliderContainer {
+    margin-top: -2.5rem;
+    width: 90% !important;
+    height: 70% !important;
+  }
 }
-
+@media only screen and (min-width: 790px) and (max-width: 1000px) {
+  .bimgLeft,
+  .bimgRight {
+    max-width: 50%;
+    object-fit: fill;
+  }
+}
 @media only screen and (min-width: 500px) and (max-width: 789px) {
+  .bimgLeft,
+  .bimgRight {
+    max-width: 50%;
+    object-fit: fill;
+  }
   .text {
     gap: 0.5rem;
+    .design {
+      width: 5rem;
+    }
     .tt {
       font-size: 3rem;
     }
@@ -145,6 +128,9 @@
 @media (max-height: 570px) {
   .container {
     height: 130vh;
+    .scrollbtn {
+      bottom: 0;
+    }
   }
 }
 
@@ -162,6 +148,6 @@
 //iphone SE
 @media (max-height: 390px) {
   .container {
-    height: 197vh;
+    height: 187vh;
   }
 }

@@ -10,7 +10,7 @@ const GalleryCard = ({ src }) => {
           : `${styles.container}`
       }
     >
-      <img src={src} alt="card" />
+      <img src={src} alt="card" loading="lazy" />
     </div>
   );
 };

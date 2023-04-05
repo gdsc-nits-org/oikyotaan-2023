@@ -1,0 +1,61 @@
+.our-team {
+  background: url(/assets/bg.png), url(/Gallery/bgtexture.png);
+  opacity: 90%;
+  height: 100svh;
+  overflow: scroll;
+  background-size: cover;
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .lottie1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+  .lottie2 {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+  }
+
+  .role {
+    position: absolute;
+    z-index: -1;
+    top: 55%;
+    font-size: 3.4em;
+    color: #482c00;
+    font-weight: 400;
+    left: 52%;
+    font-family: var(--gdsc-font-1);
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1130px) {
+  .our-team {
+    .role {
+      font-size: 2em;
+      letter-spacing: 0;
+      left: 60%;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .our-team {
+    .lottie2 {
+      display: none;
+    }
+    .role {
+      font-size: 1.2em;
+      letter-spacing: 0;
+      left: 60%;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+}

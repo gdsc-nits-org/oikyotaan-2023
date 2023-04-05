@@ -1,0 +1,222 @@
+.our-team {
+  // width: 70%;
+  margin: 5rem auto;
+
+  .team-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5em;
+
+    .title-heading {
+      display: flex;
+      gap: 1em;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 5em;
+      }
+
+      p {
+        font-size: 3.5rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        font-family: "Italiana", sans-serif;
+        color: white;
+        background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 200%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    img {
+      width: 13em;
+    }
+  }
+
+  .team-type-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 3rem;
+    button {
+      font-size: 1.5rem;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      margin-top: -3rem;
+      margin-bottom: 1rem;
+      background: transparent;
+      color: #543300;
+      position: relative;
+
+      &.active-button::after {
+        content: "";
+        position: absolute;
+        bottom: -1em;
+        left: -0.5rem;
+        right: -0.5rem;
+        height: 1em;
+        background-size: contain;
+        background-image: url("assets/underline-team.png");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .devCard-container {
+    display: flex;
+    flex-direction: column;
+
+    .devCard {
+      width: 16em;
+      height: 20em;
+      margin: 10%;
+    }
+  }
+}
+
+.team-card {
+  background: url("/assets/TeamCardbg.png") no-repeat;
+  background-size: cover;
+  width: 28em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30em;
+  flex-direction: column;
+  margin-bottom: 50%;
+  margin-left: 15vw;
+  z-index: -100;
+}
+
+.team-photo {
+  width: 14em;
+  height: 20.45em;
+  margin-top: 9.7em;
+  aspect-ratio: 0.3;
+  object-fit: cover;
+  margin-left: 0.3em;
+}
+
+.team-name {
+  font-style: normal;
+  font-size: 2.1em;
+  font-weight: 400;
+  letter-spacing: 5%;
+  color: #543300;
+  z-index: 10;
+  position: relative;
+  top: 1.5em;
+  font-family: var(--gdsc-font-1);
+}
+
+.team-bottom {
+  height: 10em;
+  width: 19.1em;
+  position: relative;
+  left: 0.2em;
+  bottom: 7.9em;
+}
+@media screen and (min-width: 600px) and (max-width: 1130px) {
+  .team-card {
+    width: 14em;
+    height: 13em;
+    margin-bottom: 30%;
+  }
+
+  .team-photo {
+    height: 10em;
+    width: 7em;
+    margin-top: 6.35em;
+  }
+
+  .team-name {
+    font-size: 1em;
+    letter-spacing: 5%;
+    position: relative;
+    top: 1em;
+  }
+
+  .team-bottom {
+    height: 5em;
+    left: 0;
+    width: 9.5em;
+    bottom: 3.1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .our-team {
+    width: 100%;
+
+    .team-type-buttons {
+      button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        margin-top: -1em;
+      }
+    }
+
+    .team-heading {
+      margin-bottom: 3em;
+
+      .title-heading {
+        p {
+          font-size: 1.8em;
+          line-height: 3rem;
+        }
+
+        img {
+          width: 3em;
+          height: 2em;
+        }
+      }
+
+      img {
+        width: 10em;
+      }
+    }
+
+    .devCard-container {
+      .devCard {
+        width: 16em;
+        height: 20em;
+      }
+    }
+  }
+
+  .team-card {
+    width: 14em;
+    height: 13em;
+    margin-left: 0.5em;
+    margin-bottom: 30%;
+  }
+
+  .team-photo {
+    height: 10em;
+    width: 7em;
+    margin-top: 6.35em;
+  }
+
+  .team-name {
+    font-size: 1em;
+    letter-spacing: 5%;
+    position: relative;
+    top: 1em;
+  }
+
+  .team-bottom {
+    height: 5em;
+    left: 0;
+    width: 9.5em;
+    bottom: 3.1em;
+  }
+}

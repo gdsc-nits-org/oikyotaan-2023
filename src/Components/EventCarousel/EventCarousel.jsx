@@ -5,12 +5,12 @@ import "swiper/scss/pagination";
 import Card from "../EventCard/EventCard";
 import data from "../../assets/events.json";
 
-import "./VerticalCarousel.scss";
+import "./EventCarousel.scss";
 
 const VerticalCarousel = () => {
   return (
     <Swiper
-      direction="vertical"
+      direction="horizontal"
       mousewheel
       pagination={{
         clickable: true,
