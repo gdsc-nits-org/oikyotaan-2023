@@ -41,7 +41,7 @@ const coreMembers = [
   {
     name: "Azad Ali",
     photoUrl:
-      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680687901/WhatsApp_Image_2023-04-05_at_2.56.27_PM_igt8b1.jpg",
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680688499/WhatsApp_Image_2023-04-05_at_3.23.11_PM_qoc0zl.jpg",
   },
   {
     name: "Reeya Hazarika",
@@ -147,6 +147,11 @@ const coreMembers = [
     name: "Nikita Mandal",
     photoUrl:
       "https://res.cloudinary.com/dnitrnzho/image/upload/v1680634659/IMG-20230405-WA0000_-_Tanuja_Dutta_pavjbh.jpg",
+  },
+  {
+    name: "Madhura Chatterjee",
+    photoUrl:
+      "https://res.cloudinary.com/dnitrnzho/image/upload/v1680688517/WhatsApp_Image_2023-04-05_at_3.23.12_PM_x6uqux.jpg",
   },
   {
     name: "Nandini Ghosh",
