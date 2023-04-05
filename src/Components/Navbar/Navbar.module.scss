@@ -77,7 +77,7 @@
       .cross1 {
         margin-left: -168vw;
         color: #f4f0eb;
-        font-size: 26px;
+        font-size: 24px;
       }
     }
     .navmob {
@@ -88,8 +88,17 @@
       width: 100%;
       background-color: #53320190;
       height: 100vh;
-      width: 45vw;
+      width: 55vw;
       margin-bottom: 60px;
+      // animation-name: example 10s;
+      // @keyframes example {
+      //   0% {
+      //     transform: translateX(-400px);
+      //   }
+      //   100% {
+      //     transform: translateX(0px);
+      //   }
+      //   }
       .li1 {
         padding-top: 80px;
         padding-bottom: 35px;
@@ -115,8 +124,35 @@
           display: none;
         }
         .imgm {
-          margin-bottom: -20px;
+          padding-left: 30px;
+          margin-bottom: -22px;
           display: block;
+        }
+      }
+      li {
+        margin: 0 4vw;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transition: 200ms;
+        &:hover {
+          scale: 1.1;
+        }
+        &.logo:hover {
+          scale: 1;
+        }
+        a {
+          font-family: "Italiana", serif;
+          font-size: 1.4rem;
+          font-weight: 600;
+          text-decoration: none;
+          color: #f4f0eb;
+          letter-spacing: 2px;
+
+          &.active {
+            text-decoration: underline;
+            text-decoration-color: #da2925;
+            text-decoration-thickness: 0.2rem;
+            text-underline-offset: 0.4rem;
+          }
         }
       }
     }

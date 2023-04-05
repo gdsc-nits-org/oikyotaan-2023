@@ -54,16 +54,16 @@
   font-size: 1.25rem;
   margin-left: 4vw;
   text-align: center;
+  margin-top: 40px;
   // font-family: var(--gdsc-font-2);
   // color: var(--grey-text-1-100);
   color: black;
 }
 
-// .about_image {
-
-//   // height: 40rem;
-//   // margin-top: 500px;
-// }
+.about_image {
+  height: 35rem;
+  // margin-top: 500px;
+}
 
 .about_imag {
   width: 30%;
@@ -124,7 +124,7 @@
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
-  // margin-left:22vw;
+  // margin-left:15vw;
   margin-top: 25px;
   // margin-right:24px;
   a {
@@ -149,7 +149,9 @@
   .about_text {
     font-size: 1rem;
     text-align: left;
-    margin-left: 7vw;
+    margin-left: 10vw;
+    margin-top: 0px;
+    // margin-left: 4vw;
   }
   .alpona {
     // height: 35vw;
@@ -220,13 +222,16 @@
     height: 20vh;
   }
   .btn {
-    margin-left: calc(50% - 80px);
+    margin-left: calc(50% - 90px);
     a {
       color: #eff2f4;
       text-decoration: none;
       font-size: 20px;
       font-weight: 700;
     }
+  }
+  .about_text_div {
+    padding-right: 0rem;
   }
 }
 
