@@ -1,6 +1,19 @@
 import styles from "./Sponsor.module.scss";
 const Sponsor = () => {
-  // const mediaPartners = [1,2,3,4,5,6,7,8,9]
+  const mediaPartners = [
+    {
+      name: "Jugosonkho",
+      img: "https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680712234/WhatsApp_Image_2023-04-05_at_9.12.23_PM_vw1pkz.webp",
+    },
+    {
+      name: "Eastern Chronicles",
+      img: "https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680712222/WhatsApp_Image_2023-04-05_at_9.12.24_PM_zr3ucd.webp",
+    },
+    {
+      name: "Baartalipi",
+      img: "https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680712212/WhatsApp_Image_2023-04-05_at_9.12.25_PM_e9mt15.webp",
+    },
+  ];
   // const sponsors = [1, 2, 3,4];
 
   return (
@@ -57,19 +70,18 @@ const Sponsor = () => {
               </div>
             );
           })} */}
-          <h1>To be announced soon..........</h1>
+          {/* <h1>To be announced soon..........</h1> */}
         </div>
-        {/* <h1 className={styles.media}>Media Partners</h1>
+        <h1 className={styles.media}>Media Partners</h1>
         <div className={styles.sponsorList}>
           {mediaPartners.map((sponsor) => {
             return (
               <div className={styles.card} key={sponsor}>
-                <img src="assets/card2.png" alt={sponsor} />
-                <p>name</p>
+                <img src={sponsor.img} alt={sponsor} />
               </div>
             );
           })}
-        </div> */}
+        </div>
       </div>
       <img
         id={styles.frightD}
