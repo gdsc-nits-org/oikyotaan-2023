@@ -19,7 +19,11 @@ const ArtistCard = ({ info }) => {
             width={isMobile ? 220 : 300}
             style={{ opacity: `${on ? 1 : 0}` }}
           />
-          <img className={style.overlay} src="/Gallery/khidki.png" alt="png" />
+          <img
+            className={style.overlay}
+            src="https://res.cloudinary.com/dt3o8ldp9/image/upload/v1680809278/khidki_piowjq.png"
+            alt="png"
+          />
         </div>
       </div>
       <div className={style.desc}>
