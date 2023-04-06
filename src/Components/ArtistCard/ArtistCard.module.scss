@@ -6,6 +6,7 @@
   border-radius: 0.5rem;
   background-color: rgba(167, 103, 41, 0.56);
   color: white;
+  overflow-y: auto;
   .container {
     display: flex;
     justify-content: center;
@@ -88,14 +89,18 @@
       margin-right: 0;
       padding: 1vw 0 0;
     }
+    .title {
+      font-size: 1rem !important;
+    }
+    .content {
+      font-size: 1rem !important;
+    }
   }
-  .container {
-    align-items: stretch;
-  }
+
   .imgContainer {
     margin-inline: 0 !important;
     justify-content: center;
-    width: 50% !important;
+    width: 30% !important;
   }
 }
 @media (max-width: 420px) {
@@ -117,6 +122,9 @@
     desc {
       margin-right: 0;
       gap: 0;
+    }
+    .content {
+      font-size: 0.7rem !important;
     }
   }
   .imgContainer {
