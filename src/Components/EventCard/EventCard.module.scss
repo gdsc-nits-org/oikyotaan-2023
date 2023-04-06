@@ -18,9 +18,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 0.5vw;
     .title {
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-weight: 600;
       text-align: center;
     }
@@ -28,11 +28,12 @@
       font-family: "Poppins";
       text-align: center;
       font-weight: 200;
+      line-height: 1.3rem;
     }
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .card {
     flex-direction: column;
     align-items: center;
@@ -43,6 +44,9 @@
     }
     .desc {
       padding: 1vw 0 0;
+      display: block;
+      max-height: 50%;
+      overflow: scroll;
     }
   }
 }

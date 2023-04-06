@@ -84,7 +84,8 @@
 }
 
 .team-card {
-  background: url("/assets/TeamCardbg.png") no-repeat;
+  background: url("https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680705172/TeamCardbg_zcrlln.webp")
+    no-repeat;
   background-size: cover;
   width: 28em;
   display: flex;
@@ -185,7 +186,7 @@
     }
 
     .devCard-container {
-      gap: 12rem;
+      gap: 9rem;
       .devCard {
         width: 16em;
         height: 20em;
@@ -204,6 +205,7 @@
     height: 10em;
     width: 7em;
     margin-top: 6.35em;
+    margin-left: 0;
   }
 
   .team-name {

@@ -25,7 +25,11 @@ const Events = ({ setLoading }) => {
   };
   return (
     <div className={style.container}>
-      <img className={style.bimg} src="/Gallery/bg.png" alt="background" />
+      <img
+        className={style.bimg}
+        src="https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680701027/bg_qlfbia.webp"
+        alt="background"
+      />
       <div className={style.lottie1}>
         <Lottie
           options={defaultOptions1}
@@ -40,14 +44,24 @@ const Events = ({ setLoading }) => {
           width={isMobile ? 350 : 400}
         />
       </div>
-      <img className={style.bimgLeft} alt="flower" src="/Gallery/flowers.png" />
+      <img
+        className={style.bimgLeft}
+        alt="flower"
+        src="https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680701128/flowers_xrd5zy.webp"
+      />
       <div className={style.text}>
         <div className={style.design}>
-          <img src="/Gallery/design.png" alt="design" />
+          <img
+            src="https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680701238/design_ldyd8q.webp"
+            alt="design"
+          />
         </div>
         <p>Events</p>
         <div className={style.design}>
-          <img src="/Gallery/design.png" alt="design" />
+          <img
+            src="https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680701238/design_ldyd8q.webp"
+            alt="design"
+          />
         </div>
       </div>
       <div className={style.cardcontainer}>

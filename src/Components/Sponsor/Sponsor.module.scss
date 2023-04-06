@@ -1,9 +1,15 @@
 .main {
-  background: url("/assets/Background_sponsor.png");
+  background: url("https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680705659/Background_sponsor_e4lhlv.webp");
   background-size: cover;
   padding-top: 5%;
   color: white;
   position: relative;
+  overflow: hidden;
+  .bimg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
 }
 .heading {
   display: flex;
@@ -16,13 +22,12 @@
     font-size: 4rem;
   }
   img {
+    z-index: 10;
     width: 40%;
   }
 }
 
 .sponsorContainer {
-  background: url("/assets/monument.svg");
-  background-size: cover;
   width: 100%;
   position: relative;
   padding: 15%;
@@ -61,6 +66,7 @@
       object-fit: cover;
     }
     #right {
+      // display: none;
       position: absolute;
       transform: translate(-50%, -50%);
       top: 50%;
@@ -88,7 +94,8 @@
       padding: 2%;
       img {
         width: 100%;
-        aspect-ratio: 1;
+        // aspect-ratio: 1;
+        height: 100%;
         border-radius: 1rem;
       }
       p {
@@ -118,17 +125,17 @@
   opacity: 1;
 }
 #frightD {
+  display: none;
   position: absolute;
   bottom: 0px;
   right: 0px;
   width: 40%;
-  opacity: 0;
 }
 @media (max-width: 700px) {
   .heading {
     gap: 2%;
     h1 {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
     }
     img {
       width: 40%;
@@ -162,7 +169,7 @@
     opacity: 0;
   }
   #frightD {
-    opacity: 1;
+    display: block;
   }
   .sponsorContainer {
     .frame {

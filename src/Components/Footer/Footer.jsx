@@ -9,7 +9,10 @@ const Footer = () => {
       <div className={style.Footer}>
         <div className={style.footerupper}>
           <div className={style.footerupperleft}>
-            <img src="/assets/logo_txt.png" alt="gdsc_logo" />
+            <img
+              src="https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680700845/logo_txt_n1cn1i.webp"
+              alt="gdsc_logo"
+            />
           </div>
           <div className={style.footeruppermiddle}>
             <img src="/images/oikyotan.svg" alt="oikyotaan_logo" />
@@ -31,11 +34,19 @@ const Footer = () => {
             </div>
           </div>
           <div className={style.footermiddleright}>
-            <a className={style.facebook} href="http">
+            <a
+              className={style.facebook}
+              href="https://www.facebook.com/nitsilcharoikyotaan"
+              target="_blank"
+            >
               <FiFacebook className={style.facebooklogo} />
               <p> Facebook </p>
             </a>
-            <a className={style.instagram} href="http">
+            <a
+              className={style.instagram}
+              href="https://www.instagram.com/_oikyotaan_/"
+              target="_blank"
+            >
               <FiInstagram className={style.instagramlogo} />
               <p> Instagram </p>
             </a>

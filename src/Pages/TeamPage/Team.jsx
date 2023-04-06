@@ -21,40 +21,44 @@ const OurTeamPage = ({ setLoading }) => {
 
   useEffect(() => {
     if (selectedType === "web") {
-      if (scroll > 0.52) {
+      if (scroll > 0.56) {
         setDesignation("Deputy WEB Head");
-      } else if (scroll > 0.43) {
+      } else if (scroll > 0.48) {
         setDesignation("Deputy UI/UX Head");
-      } else if (scroll > 0.26) {
+      } else if (scroll > 0.33) {
         setDesignation("UI/UX Head");
       } else {
         setDesignation("Web Head");
       }
     } else if (scroll > 0.97) {
       setDesignation("Content & Event Management Head");
-    } else if (scroll > 0.93) {
+    } else if (scroll > 0.938) {
       setDesignation("Content Head");
-    } else if (scroll > 0.85) {
+    } else if (scroll > 0.84) {
       setDesignation("Decoration Head");
-    } else if (scroll > 0.81) {
+    } else if (scroll > 0.77) {
       setDesignation("Logistics Head");
-    } else if (scroll > 0.69) {
+    } else if (scroll > 0.64) {
       setDesignation("Hospitality Head");
-    } else if (scroll > 0.566) {
+    } else if (scroll > 0.53) {
       setDesignation("Infra Head");
-    } else if (scroll > 0.52) {
-      setDesignation("Publicity Head");
-    } else if (scroll > 0.45) {
+    } else if (scroll > 0.51) {
+      setDesignation("Publicity and Event Management Head");
+    } else if (scroll > 0.44) {
       setDesignation("Executive Head");
     } else if (scroll > 0.41) {
       setDesignation("Event Management Head");
-    } else if (scroll > 0.285) {
+    } else if (scroll > 0.38) {
+      setDesignation("Cultural Head");
+    } else if (scroll > 0.278) {
       setDesignation("Marketing Head");
-    } else if (scroll > 0.24) {
+    } else if (scroll > 0.245) {
+      setDesignation("WEB Head");
+    } else if (scroll > 0.211) {
       setDesignation("Marketing & WEB Head");
-    } else if (scroll > 0.2) {
+    } else if (scroll > 0.175) {
       setDesignation("Treasurer");
-    } else if (scroll > 0.05) {
+    } else if (scroll > 0.041) {
       setDesignation("Chief Coordinator");
     } else {
       setDesignation("Convenor");
