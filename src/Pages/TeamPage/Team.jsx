@@ -21,11 +21,11 @@ const OurTeamPage = ({ setLoading }) => {
 
   useEffect(() => {
     if (selectedType === "web") {
-      if (scroll > 0.52) {
+      if (scroll > 0.56) {
         setDesignation("Deputy WEB Head");
-      } else if (scroll > 0.43) {
+      } else if (scroll > 0.48) {
         setDesignation("Deputy UI/UX Head");
-      } else if (scroll > 0.26) {
+      } else if (scroll > 0.33) {
         setDesignation("UI/UX Head");
       } else {
         setDesignation("Web Head");
