@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/" element={<Home setLoading={setLoading} />} />
         <Route path="/gallery" element={<Gallery setLoading={setLoading} />} />
         <Route path="/events" element={<Events setLoading={setLoading} />} />
-        <Route path="/artists" element={<Artist />} />
+        <Route path="/artist" element={<Artist />} />
         <Route path="/team" element={<TeamPage setLoading={setLoading} />} />
         <Route path="*" element={<Error />} />
       </Routes>
