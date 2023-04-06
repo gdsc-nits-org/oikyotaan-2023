@@ -31,7 +31,7 @@ const App = () => {
           <Route path="/" element={<Home setLoading={setLoading} />} />
           <Route path="/gallery" element={<Gallery setLoading={setLoading} />} />
           <Route path="/events" element={<Events setLoading={setLoading} />} />
-          <Route path="/artist" element={<Artist />} />
+          <Route path="/artist" element={<Artist setLoading={setLoading} />} />
           <Route path="/team" element={<TeamPage setLoading={setLoading} />} />
           <Route path="*" element={<Error />} />
         </Routes>

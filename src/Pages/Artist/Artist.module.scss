@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 
 .container {
-  height: 100vh;
-  background: url("/Gallery/bgtexture.png");
+  height: 100svh;
+  background: url("https://res.cloudinary.com/dc1n0ikgk/image/upload/v1680701411/bgtexture_efqgzl.webp");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  .lottie1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .lottie2 {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   .sliderContainer {
     position: absolute;
     height: 65%;
