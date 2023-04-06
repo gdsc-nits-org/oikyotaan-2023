@@ -1,5 +1,11 @@
 import styles from "./Sponsor.module.scss";
 const Sponsor = () => {
+  const sponsors = [
+    {
+      img: "https://res.cloudinary.com/dlj53me54/image/upload/v1680727947/WhatsApp_Image_2023-04-06_at_1.53.44_AM_zfdbx5.webp",
+    },
+  ];
+
   const mediaPartners = [
     {
       img: "https://res.cloudinary.com/dbp3cjyyy/image/upload/v1680712234/WhatsApp_Image_2023-04-05_at_9.12.23_PM_vw1pkz.webp",
@@ -18,9 +24,6 @@ const Sponsor = () => {
     },
     {
       img: "https://res.cloudinary.com/dlj53me54/image/upload/v1680727831/IMG_20230406_000036_617_oe1mwo.webp",
-    },
-    {
-      img: "https://res.cloudinary.com/dlj53me54/image/upload/v1680727947/WhatsApp_Image_2023-04-06_at_1.53.44_AM_zfdbx5.webp",
     },
   ];
   // const sponsors = [1, 2, 3,4];
@@ -69,16 +72,15 @@ const Sponsor = () => {
             alt="right frame"
           />
         </div>
-
+        <h1 className={styles.media}>Food Partner</h1>
         <div className={styles.sponsorList}>
-          {/* {sponsors.map((sponsor) => {
+          {sponsors.map((sponsor) => {
             return (
               <div className={styles.card} key={sponsor}>
-                <img src="assets/card2.png" alt={sponsor} />
-                <p>name</p>
+                <img src={sponsor.img} alt={sponsor} />
               </div>
             );
-          })} */}
+          })}
           {/* <h1>To be announced soon..........</h1> */}
         </div>
         <h1 className={styles.media}>Media Partners</h1>
