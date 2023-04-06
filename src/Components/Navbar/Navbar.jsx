@@ -25,22 +25,27 @@ const Navbar = () => {
   return (
     <div ref={wrapperRef} className={style.container}>
       <div className={style.new}>
-        <img
-          src="/images/oikyotan.svg"
-          alt="img"
-          className={mobile === false ? style.img : style.imgmob}
-        />
+        <NavLink
+          onClick={(val) => setMobile(!val)}
+          to="/"
+          className={({ isActive }) => (isActive ? style.active : "")}
+        >
+          <img
+            src="/images/oikyotan.svg"
+            alt="img"
+            className={mobile === false ? style.img : style.imgmob}
+          />
+        </NavLink>
       </div>
-      {/* <ul className={style.nav}> */}
       <ul className={mobile === false ? style.nav : style.navmob}>
         <li className={style.li1}>
           <img src="/images/home.png" alt="img" className={style.imgm} />
           <NavLink
             onClick={(val) => setMobile(!val)}
-            to="/"
+            to="/artist"
             className={({ isActive }) => (isActive ? style.active : "")}
           >
-            Home
+            Artist
           </NavLink>
         </li>
         <li>
@@ -54,12 +59,18 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className={style.logo}>
-          <img
-            src="/images/oikyotan.svg"
-            alt="img"
-            width={isMobile ? 0 : 160}
-            className={style.img1}
-          />
+          <NavLink
+            onClick={(val) => setMobile(!val)}
+            to="/"
+            className={({ isActive }) => (isActive ? style.active : "")}
+          >
+            <img
+              src="/images/oikyotan.svg"
+              alt="img"
+              width={isMobile ? 0 : 160}
+              className={style.img1}
+            />
+          </NavLink>
         </li>
         <li className={style.li5}>
           <img src="/images/image.png" alt="img" className={style.imgm} />
